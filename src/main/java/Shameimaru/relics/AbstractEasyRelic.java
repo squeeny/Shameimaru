@@ -5,8 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import Shameimaru.util.TexLoader;
 
-import static Shameimaru.TodoMod.makeRelicPath;
-import static Shameimaru.TodoMod.modID;
+import static Shameimaru.Shameimaru.makeRelicPath;
 
 public abstract class AbstractEasyRelic extends CustomRelic {
     public AbstractCard.CardColor color;
@@ -16,8 +15,8 @@ public abstract class AbstractEasyRelic extends CustomRelic {
     }
 
     public AbstractEasyRelic(String setId, AbstractRelic.RelicTier tier, AbstractRelic.LandingSound sfx, AbstractCard.CardColor color) {
-        super(setId, TexLoader.getTexture(makeRelicPath(setId.replace(modID + ":", "") + ".png")), tier, sfx);
-        outlineImg = TexLoader.getTexture(makeRelicPath(setId.replace(modID + ":", "") + "Outline.png"));
+        super(setId, TexLoader.getTexture(makeRelicPath(setId + ".png")), tier, sfx);
+        outlineImg = TexLoader.getTexture(makeRelicPath(setId + "Outline.png"));
         this.color = color;
     }
 
