@@ -67,11 +67,11 @@ public class chr_aya extends CustomPlayer {
                 SHOULDER1,
                 SHOULDER2,
                 CORPSE,
-                getLoadout(), 20.0F, -10.0F, 166.0F, 327.0F, new EnergyManager(3));
-
+                getLoadout(), 20.0F, -10.0F, 180.0F, 327.0F, new EnergyManager(3));
 
         dialogX = (drawX + 0.0F * Settings.scale);
         dialogY = (drawY + 240.0F * Settings.scale);
+
     }
 
     @Override
