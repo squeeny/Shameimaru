@@ -1,17 +1,17 @@
 package Shameimaru.cards.bas;
 
-import Limitbreaker.cards.abs.abs_lb_card;
-import Limitbreaker.util.CardInfo;
+import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static Limitbreaker.Limitbreaker.makeID;
-import static Limitbreaker.util.actionShortcuts.doDmg;
+import static Shameimaru.Shameimaru.makeID;
+import static Shameimaru.util.actionShortcuts.doDmg;
 
 
-public class Strike extends abs_lb_card {
+public class Strike extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             Strike.class.getSimpleName(),
             COSTS[1],
