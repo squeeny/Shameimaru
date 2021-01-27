@@ -206,9 +206,7 @@ public class chr_aya extends CustomPlayer {
         if (p() instanceof chr_aya) { ((chr_aya) p()).runAnim(anim); }
     }
 
-    public void playDeathAnimation() {
-        //runAnimation("Win");
-    }
+    public void playDeathAnimation() { runAnimation("Defeat"); }
 
     public void runAnim(String animation) {
         ((BetterSpriterAnimation)this.animation).myPlayer.setAnimation(animation);
