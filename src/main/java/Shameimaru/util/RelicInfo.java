@@ -3,7 +3,7 @@ package Shameimaru.util;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import static Shameimaru.TodoMod.makeRelicPath;
+import static Shameimaru.Shameimaru.makeRelicPath;
 
 public class RelicInfo {
     public String relicName;
