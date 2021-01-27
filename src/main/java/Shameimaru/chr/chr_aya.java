@@ -62,7 +62,7 @@ public class chr_aya extends CustomPlayer {
 
     public chr_aya(String name, PlayerClass setClass) {
         super(name, setClass, new CustomEnergyOrb(orbTextures, getModID() + "Resources/images/char/mainChar/orb/vfx.png", null), new BetterSpriterAnimation(
-                getModID() + "Resources/images/char/mainChar/static.scml"));
+                getModID() + "Resources/images/char/mainChar/AyaAnimation.scml"));
         initializeClass(null,
                 SHOULDER1,
                 SHOULDER2,
