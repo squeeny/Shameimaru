@@ -3,6 +3,7 @@ package Shameimaru.cards.sp;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.cards.sp.core.drawCard;
 import Shameimaru.cards.sp.core.powerCard;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.util.CardInfo;
 import basemod.AutoAdd;
 import basemod.ReflectionHacks;
@@ -46,6 +47,7 @@ public class Photograph extends abs_aya_card {
         else { target = CardTarget.SELF; }
         setRetain(true);
         setExhaust(true);
+        this.tags.add(CardENUMs.PHOTOGRAPH);
     }
     public Photograph() {
         super(cardInfo, false);
