@@ -1,4 +1,4 @@
 package Shameimaru.mechanics;
 
-public class Photographs {
+public class PhotographManager {
 }

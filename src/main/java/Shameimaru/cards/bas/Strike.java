@@ -1,5 +1,6 @@
 package Shameimaru.cards.bas;
 
+import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -8,6 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Shameimaru.Shameimaru.makeID;
+import static Shameimaru.util.actionShortcuts.atb;
 import static Shameimaru.util.actionShortcuts.doDmg;
 
 
@@ -30,9 +32,6 @@ public class Strike extends abs_aya_card {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         doDmg(m, this.damage, AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
-        m.takeTurn();
-        m.applyTurnPowers();
-        m.rollMove();
-        m.createIntent();
+        atb(new createPhotographAction(m));
     }
 }
