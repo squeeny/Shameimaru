@@ -53,12 +53,18 @@
 
   "${ModID}:Photocopier": {
     "NAME": "Photocopier",
-    "DESCRIPTION": "Gain !B! Block. NL Copy a #yPhotograph in your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Copy a *Photograph in your hand."
   },
 
   "${ModID}:WidespreadPropaganda": {
     "NAME": "Widespread Propaganda",
     "DESCRIPTION": "Whenever a *Photograph would deal damage to a single target, deal that damage to ALL enemies instead."
+  },
+
+  "${ModID}:DoctoredImage": {
+    "NAME": "Doctored Image",
+    "DESCRIPTION": "Gain !B! Block. NL Upgrade a *Photograph in your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Upgrade a *Photograph in your hand twice."
   },
 
   "${ModID}:TemporaryPowerDemo": {
