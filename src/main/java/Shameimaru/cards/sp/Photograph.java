@@ -1,6 +1,7 @@
 package Shameimaru.cards.sp;
 
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.cards.sp.core.drawCard;
 import Shameimaru.cards.sp.core.powerCard;
 import Shameimaru.util.CardInfo;
 import basemod.AutoAdd;
@@ -25,9 +26,7 @@ public class Photograph extends abs_aya_card {
             CardTarget.SELF_AND_ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int DMG = 6;
-    private static final int UPG_DMG = 3;
-    private static final int ENERGY = 2;
+    private static final int EMERGENCY_DRAW = 1;
     private boolean attacking;
     private boolean blocking;
 
@@ -39,11 +38,14 @@ public class Photograph extends abs_aya_card {
             if(c.baseDamage > 0){ attacking = true; }
             if(c.baseBlock > 0){ blocking = true; }
         }
+        if(card.isEmpty()){ card.add(new drawCard(EMERGENCY_DRAW)); }
         if(attacking){
             if(blocking){ target = CardTarget.SELF_AND_ENEMY; }
             else { target = CardTarget.ENEMY; }
         }
         else { target = CardTarget.SELF; }
+        setRetain(true);
+        setExhaust(true);
     }
     public Photograph() {
         super(cardInfo, false);

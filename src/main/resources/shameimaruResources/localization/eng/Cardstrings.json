@@ -15,7 +15,12 @@
     "NAME": "Unused",
     "DESCRIPTION": "Apply !M! *%1$s NL ",
     "UPGRADE_DESCRIPTION": "Gain !M! *%1$s NL "
+  },
 
+  "${ModID}:drawCard": {
+    "NAME": "Unused",
+    "DESCRIPTION": "Draw !M! card. NL ",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL "
   },
 
   "${ModID}:Photograph": {
