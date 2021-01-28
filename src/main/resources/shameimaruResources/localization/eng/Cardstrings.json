@@ -51,6 +51,11 @@
     "DESCRIPTION": "Force the enemy to attack if possible. NL If the enemy is already attacking, gain !B! block."
   },
 
+  "${ModID}:Photocopier": {
+    "NAME": "Photocopier",
+    "DESCRIPTION": "Gain !B! Block. NL Copy a #yPhotograph in your hand."
+  },
+
   "${ModID}:WidespreadPropaganda": {
     "NAME": "Widespread Propaganda",
     "DESCRIPTION": "Whenever a *Photograph would deal damage to a single target, deal that damage to ALL enemies instead."
