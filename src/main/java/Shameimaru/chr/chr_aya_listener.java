@@ -9,7 +9,7 @@ public class chr_aya_listener implements Player.PlayerListener {
         this.character = character;
     }
     public void animationFinished(Animation animation){
-        if (animation.name.equals("Win")) { character.stopAnimation(); }
+        if (animation.name.equals("Defeat")) { character.stopAnimation(); }
         else if (!animation.name.equals("Idle")) { character.resetAnimation(); }
     }
 

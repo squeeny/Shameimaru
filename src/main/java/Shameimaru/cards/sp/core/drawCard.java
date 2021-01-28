@@ -13,7 +13,7 @@ import static Shameimaru.util.actionShortcuts.doDraw;
 @AutoAdd.Ignore
 public class drawCard extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
-            blockCard.class.getSimpleName(),
+            drawCard.class.getSimpleName(),
             COST_UNPLAYABLE,
             CardType.SKILL,
             CardTarget.NONE
