@@ -14,6 +14,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.beyond.Transient;
+import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
 
 import java.util.ArrayList;
 
@@ -42,6 +44,7 @@ public class createPhotographAction extends AbstractGameAction {
             AbstractDungeon.actionManager = new GameActionManager();
             getEnemyDamage(m);
             m.takeTurn();
+            stopTurnChanging(m);
             for(AbstractGameAction a: AbstractDungeon.actionManager.actions) {
                 if(a instanceof GainBlockAction) { block += a.amount; }
                 else if(a instanceof ApplyPowerAction){ powerActions.add(a); }
@@ -76,5 +79,24 @@ public class createPhotographAction extends AbstractGameAction {
         }
     }
 
+    public void stopTurnChanging(AbstractMonster m) {
+        switch (m.id) {
+
+            // Transient's count increases
+            case Transient.ID:
+                int count = ReflectionHacks.getPrivate(m, m.getClass(), "count");
+                ReflectionHacks.setPrivate(m, m.getClass(), "count", count - 1);
+                break;
+
+            // Lagavulin wakes up faster, but is otherwise the same
+            case Lagavulin.ID:
+                int idleCount = ReflectionHacks.getPrivate(m, m.getClass(), "idleCount");
+                ReflectionHacks.setPrivate(m, m.getClass(), "idleCount", idleCount - 1);
+                int debuffTurnCount = ReflectionHacks.getPrivate(m, m.getClass(), "debuffTurnCount");
+                ReflectionHacks.setPrivate(m, m.getClass(), "debuffTurnCount", debuffTurnCount - 1);
+                break;
+
+        }
+    }
 
 }

@@ -52,13 +52,6 @@ public class Photograph extends abs_aya_card {
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         for(AbstractCard c: card){
-            this.baseDamage = c.baseDamage;
-            ReflectionHacks.setPrivate(card, AbstractCard.class, "isMultiDamage", ReflectionHacks.getPrivate(this.card, AbstractCard.class, "isMultiDamage"));
-            this.baseBlock = c.baseBlock;
-            this.baseMagicNumber = this.magicNumber = c.baseMagicNumber;
-            c.applyPowers();
-            try { c.calculateCardDamage(m); }
-            catch (Exception e){ e.printStackTrace(); }
             c.use(p, m);
         }
     }
@@ -85,7 +78,7 @@ public class Photograph extends abs_aya_card {
         super.calculateCardDamage(mo);
         String desc = cardStrings.DESCRIPTION;
         for(AbstractCard c: card){
-            c.applyPowers();
+            c.calculateCardDamage(mo);
             String x;
             if(c instanceof powerCard){
                 AbstractPower p = ReflectionHacks.getPrivate(c, powerCard.class, "power");
