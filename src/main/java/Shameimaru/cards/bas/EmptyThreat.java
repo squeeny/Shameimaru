@@ -16,7 +16,7 @@ public class EmptyThreat extends abs_aya_card {
             EmptyThreat.class.getSimpleName(),
             COSTS[1],
             CardType.ATTACK,
-            AbstractCard.CardTarget.SELF
+            CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
     private static final int DAMAGE = 9;

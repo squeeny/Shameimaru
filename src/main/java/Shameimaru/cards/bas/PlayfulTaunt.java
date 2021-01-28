@@ -17,7 +17,7 @@ public class PlayfulTaunt extends abs_aya_card {
             PlayfulTaunt.class.getSimpleName(),
             COSTS[1],
             AbstractCard.CardType.SKILL,
-            AbstractCard.CardTarget.SELF
+            CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
     private static final int BLOCK = 9;
