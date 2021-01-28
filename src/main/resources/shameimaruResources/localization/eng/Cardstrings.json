@@ -13,7 +13,9 @@
 
   "${ModID}:powerCard": {
     "NAME": "Unused",
-    "DESCRIPTION": "Apply !M! *%1$s NL "
+    "DESCRIPTION": "Apply !M! *%1$s NL ",
+    "UPGRADE_DESCRIPTION": "Gain !M! *%1$s NL "
+
   },
 
   "${ModID}:Photograph": {

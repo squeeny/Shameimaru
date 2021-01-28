@@ -25,11 +25,15 @@ public class powerCard extends abs_aya_card {
         super(cardInfo, false);
         power = p;
         setMagic(amount, amount + 1);
+        power.amount = magicNumber;
+        if(power.type == AbstractPower.PowerType.BUFF){
+            power.owner = actionShortcuts.p();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        }
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        power.amount = magicNumber;
-        power.owner = p;
-        doPow(actionShortcuts.p(), power);
+        if(power.type == AbstractPower.PowerType.BUFF){ doPow(p, power); }
+        else { doPow(m, power); }
     }
 }
