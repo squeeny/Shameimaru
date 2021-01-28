@@ -1,6 +1,8 @@
 package Shameimaru.chr;
 
 import Shameimaru.cards.bas.Defend;
+import Shameimaru.cards.bas.EmptyThreat;
+import Shameimaru.cards.bas.PlayfulTaunt;
 import Shameimaru.cards.bas.Strike;
 import Shameimaru.relics.TodoItem;
 import Shameimaru.util.BetterSpriterAnimation;
@@ -84,12 +86,11 @@ public class chr_aya extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
-            retVal.add(Strike.ID);
-        }
-        for (int i = 0; i < 4; i++) {
-            retVal.add(Defend.ID);
-        }
+        for (int i = 0; i < 4; i++) { retVal.add(Strike.ID); }
+        for (int i = 0; i < 4; i++) { retVal.add(Defend.ID); }
+        retVal.add(EmptyThreat.ID);
+        retVal.add(PlayfulTaunt.ID);
+
         //TODO: Change this to your specifications.
         return retVal;
     }
