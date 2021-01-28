@@ -125,6 +125,13 @@ public class actionShortcuts {
                         intent == Intent.ATTACK_DEBUFF ||
                         intent == Intent.ATTACK_DEFEND;
     }
+    public static boolean isBlockIntent(Intent intent) {
+        return
+                intent == Intent.DEBUFF ||
+                        intent == Intent.DEFEND_BUFF ||
+                        intent == Intent.DEFEND_DEBUFF ||
+                        intent == Intent.ATTACK_DEFEND;
+    }
     // Searches for Buff Intents.
     public static boolean isBuffIntent(Intent intent) {
         return
@@ -132,6 +139,7 @@ public class actionShortcuts {
                         intent == Intent.ATTACK_BUFF ||
                         intent == Intent.DEFEND_BUFF;
     }
+
     public static int getPercentageInc(float val) { return MathUtils.floor((val - 1.0F) * 100.0F); }
 }
 

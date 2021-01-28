@@ -19,8 +19,7 @@ import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
 
 import java.util.ArrayList;
 
-import static Shameimaru.util.actionShortcuts.att;
-import static Shameimaru.util.actionShortcuts.isAttackIntent;
+import static Shameimaru.util.actionShortcuts.*;
 
 public class createPhotographAction extends AbstractGameAction {
     private int damage;
@@ -50,7 +49,7 @@ public class createPhotographAction extends AbstractGameAction {
                 if(a instanceof GainBlockAction) { block += a.amount; }
                 else if(a instanceof ApplyPowerAction){ powerActions.add(a); }
             }
-            setBlock();
+            setBlock(m);
             setPowerActions();
             photograph = new Photograph(c);
             AbstractDungeon.actionManager = tmp;
@@ -64,13 +63,15 @@ public class createPhotographAction extends AbstractGameAction {
             damage = ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentDmg");
             if (ReflectionHacks.getPrivate(m, AbstractMonster.class, "isMultiDmg")) { attack_times = ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentMultiAmt"); }
             attackCard a = new attackCard(damage, attack_times);
-            if(a.baseDamage > 0){ c.add(a); }
+            c.add(a);
         }
     }
 
-    public void setBlock(){
-        blockCard b = new blockCard(block);
-        if(b.block > 0){ c.add(b); }
+    public void setBlock(AbstractMonster m){
+        if (isBlockIntent(m.intent)) {
+            blockCard b = new blockCard(block);
+            c.add(b);
+        }
     }
 
     public void setPowerActions(){
