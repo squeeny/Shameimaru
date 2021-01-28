@@ -86,9 +86,8 @@ public class chr_aya extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for (int i = 0; i < 4; i++) { retVal.add(Strike.ID); }
+        for (int i = 0; i < 5; i++) { retVal.add(Strike.ID); }
         for (int i = 0; i < 4; i++) { retVal.add(Defend.ID); }
-        retVal.add(EmptyThreat.ID);
         retVal.add(PlayfulTaunt.ID);
 
         //TODO: Change this to your specifications.
