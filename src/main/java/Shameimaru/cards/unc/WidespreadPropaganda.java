@@ -2,6 +2,7 @@ package Shameimaru.cards.unc;
 
 import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.powers.WidespreadPropagandaPower;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,8 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Shameimaru.Shameimaru.makeID;
-import static Shameimaru.util.actionShortcuts.atb;
-import static Shameimaru.util.actionShortcuts.doDmg;
+import static Shameimaru.util.actionShortcuts.*;
 
 public class WidespreadPropaganda extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
@@ -28,6 +28,6 @@ public class WidespreadPropaganda extends abs_aya_card {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-
+        doPow(p(), new WidespreadPropagandaPower(p()));
     }
 }
