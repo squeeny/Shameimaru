@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
 import java.util.ArrayList;
 
 import static Shameimaru.util.actionShortcuts.att;
+import static Shameimaru.util.actionShortcuts.isAttackIntent;
 
 public class createPhotographAction extends AbstractGameAction {
     private int damage;
@@ -59,10 +60,12 @@ public class createPhotographAction extends AbstractGameAction {
     }
 
     public void getEnemyDamage(AbstractMonster m){
-        damage = ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentDmg");
-        if (ReflectionHacks.getPrivate(m, AbstractMonster.class, "isMultiDmg")) { attack_times = ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentMultiAmt"); }
-        attackCard a = new attackCard(damage, attack_times);
-        if(a.baseDamage > 0){ c.add(a); }
+        if (isAttackIntent(m.intent)) {
+            damage = ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentDmg");
+            if (ReflectionHacks.getPrivate(m, AbstractMonster.class, "isMultiDmg")) { attack_times = ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentMultiAmt"); }
+            attackCard a = new attackCard(damage, attack_times);
+            if(a.baseDamage > 0){ c.add(a); }
+        }
     }
 
     public void setBlock(){
@@ -82,13 +85,11 @@ public class createPhotographAction extends AbstractGameAction {
     public void stopTurnChanging(AbstractMonster m) {
         switch (m.id) {
 
-            // Transient's count increases
             case Transient.ID:
                 int count = ReflectionHacks.getPrivate(m, m.getClass(), "count");
                 ReflectionHacks.setPrivate(m, m.getClass(), "count", count - 1);
                 break;
 
-            // Lagavulin wakes up faster, but is otherwise the same
             case Lagavulin.ID:
                 int idleCount = ReflectionHacks.getPrivate(m, m.getClass(), "idleCount");
                 ReflectionHacks.setPrivate(m, m.getClass(), "idleCount", idleCount - 1);
