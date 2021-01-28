@@ -31,6 +31,7 @@
     "NAME": "Photograph",
     "DESCRIPTION": ""
   },
+
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
@@ -39,7 +40,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-
+  "${ModID}:WidespreadPropaganda": {
+    "NAME": "Widespread Propaganda",
+    "DESCRIPTION": "Whenever a *Photograph would deal damage to a single target, deal that damage to ALL enemies instead."
+  },
 
   "${ModID}:TemporaryPowerDemo": {
     "NAME": "Auto-Generated Temporary Power",
