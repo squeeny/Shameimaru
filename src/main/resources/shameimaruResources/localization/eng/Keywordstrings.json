@@ -6,5 +6,21 @@
       "todos"
     ],
     "DESCRIPTION": "TODO: Make your own epic keywords"
+  },
+
+  {
+    "PROPER_NAME": "Snapshot",
+    "NAMES": [
+      "snapshot"
+    ],
+    "DESCRIPTION": "Create a #yphotograph with the same properties of the enemy's action"
+  },
+
+  {
+    "PROPER_NAME": "Snapshot+",
+    "NAMES": [
+      "snapshot+"
+    ],
+    "DESCRIPTION": "Create a #yphotograph with the same properties of the enemy's action. Then upgrade it."
   }
 ]

@@ -21,19 +21,28 @@ public class powerCard extends abs_aya_card {
     );
     public static final String ID = makeID(cardInfo.cardName);
     private AbstractPower power;
+    private int UPG_POWER = 1;
     public powerCard(AbstractPower p, int amount) {
         super(cardInfo, false);
         power = p;
-        setMagic(amount, amount + 1);
+        setMagic(amount);
         power.amount = magicNumber;
         if(power.type == AbstractPower.PowerType.BUFF){
             power.owner = actionShortcuts.p();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
         }
+        timesUpgraded = 0;
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(power.type == AbstractPower.PowerType.BUFF){ doPow(p, power); }
         else { doPow(m, power); }
+    }
+    public boolean canUpgrade() { return true; }
+    @Override
+    public void upgrade() {
+        upgradeMagicNumber(UPG_POWER);
+        this.timesUpgraded++;
+        this.upgraded = true;
     }
 }

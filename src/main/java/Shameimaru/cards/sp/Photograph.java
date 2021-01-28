@@ -129,4 +129,13 @@ public class Photograph extends abs_aya_card {
                 return Integer.toString(-99);
         }
     }
+    public boolean canUpgrade() { return true; }
+    @Override
+    public void upgrade() {
+        for(AbstractCard c: card){ c.upgrade(); }
+        this.timesUpgraded++;
+        this.upgraded = true;
+        this.name = cardStrings.NAME + "+" + this.timesUpgraded;
+        initializeTitle();
+    }
 }

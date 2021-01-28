@@ -19,10 +19,19 @@ public class drawCard extends abs_aya_card {
             CardTarget.NONE
     );
     public static final String ID = makeID(cardInfo.cardName);
+    private int UPG_DRAW = 1;
     public drawCard(int draw) {
         super(cardInfo, true);
-        setMagic(draw, draw + 1);
+        setMagic(draw);
+        timesUpgraded = 0;
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { doDraw(magicNumber); }
+    public boolean canUpgrade() { return true; }
+    @Override
+    public void upgrade() {
+        upgradeMagicNumber(UPG_DRAW);
+        this.timesUpgraded++;
+        this.upgraded = true;
+    }
 }

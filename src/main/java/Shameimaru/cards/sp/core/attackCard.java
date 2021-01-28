@@ -23,10 +23,12 @@ public class attackCard extends abs_aya_card {
     );
     public static final String ID = makeID(cardInfo.cardName);
     private boolean hasWideSpread;
+    private int UPG_DMG = 1;
     public attackCard(int damage, int times) {
         super(cardInfo, false);
-        setDamage(damage, damage + 3);
-        setMagic(times, times + 1);
+        setDamage(damage);
+        setMagic(times);
+        timesUpgraded = 0;
         if(magicNumber > 0){ this.rawDescription = cardStrings.UPGRADE_DESCRIPTION; }
     }
     @Override
@@ -49,5 +51,12 @@ public class attackCard extends abs_aya_card {
         hasWideSpread = p().hasPower(WidespreadPropagandaPower.POWER_ID);
         if (hasWideSpread) { this.rawDescription = magicNumber > 0 ? cardStrings.EXTENDED_DESCRIPTION[1] : cardStrings.EXTENDED_DESCRIPTION[0]; }
         else { this.rawDescription = magicNumber > 0 ? cardStrings.UPGRADE_DESCRIPTION : cardStrings.DESCRIPTION; }
+    }
+    public boolean canUpgrade() { return true; }
+    @Override
+    public void upgrade() {
+        upgradeDamage(UPG_DMG + (this.timesUpgraded * 2));
+        this.timesUpgraded++;
+        this.upgraded = true;
     }
 }
