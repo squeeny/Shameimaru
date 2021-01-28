@@ -22,6 +22,7 @@ public class attackCard extends abs_aya_card {
             CardTarget.ALL
     );
     public static final String ID = makeID(cardInfo.cardName);
+    private boolean hasWideSpread;
     public attackCard(int damage, int times) {
         super(cardInfo, false);
         setDamage(damage, damage + 3);
@@ -30,10 +31,23 @@ public class attackCard extends abs_aya_card {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        boolean hasWideSpread = p.hasPower(WidespreadPropagandaPower.POWER_ID);
         for(int i = 0; i <= magicNumber; i+=1){
-            if(hasWideSpread){ doAllDmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL, false); }
+            if(hasWideSpread){ doAllDmg(damage, AbstractGameAction.AttackEffect.SLASH_VERTICAL, false); }
             else { doDmg(m, damage); }
         }
+    }
+    @Override
+    public void applyPowers(){
+        super.applyPowers();
+        hasWideSpread = p().hasPower(WidespreadPropagandaPower.POWER_ID);
+        if (hasWideSpread) { this.rawDescription = magicNumber > 0 ? cardStrings.EXTENDED_DESCRIPTION[1] : cardStrings.EXTENDED_DESCRIPTION[0]; }
+        else { this.rawDescription = magicNumber > 0 ? cardStrings.UPGRADE_DESCRIPTION : cardStrings.DESCRIPTION; }
+    }
+    @Override
+    public void calculateCardDamage(AbstractMonster mo){
+        super.calculateCardDamage(mo);
+        hasWideSpread = p().hasPower(WidespreadPropagandaPower.POWER_ID);
+        if (hasWideSpread) { this.rawDescription = magicNumber > 0 ? cardStrings.EXTENDED_DESCRIPTION[1] : cardStrings.EXTENDED_DESCRIPTION[0]; }
+        else { this.rawDescription = magicNumber > 0 ? cardStrings.UPGRADE_DESCRIPTION : cardStrings.DESCRIPTION; }
     }
 }

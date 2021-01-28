@@ -1,1 +1,8 @@
-{}
+{
+  "${ModID}:WidespreadPropagandaPower": {
+    "NAME": "Widespread Propaganda",
+    "DESCRIPTIONS": [
+      "Whenever a #yPhotograph would deal damage to a single target, it deals damage to ALL enemies instead."
+    ]
+  }
+}

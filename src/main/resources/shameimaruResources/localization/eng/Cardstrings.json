@@ -3,7 +3,11 @@
   "${ModID}:attackCard": {
     "NAME": "Unused",
     "DESCRIPTION": "Deal !D! damage. NL ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL "
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage to ALL enemies. NL ",
+      "Deal !D! damage to ALL enemies !M! times. NL "
+    ]
   },
 
   "${ModID}:blockCard": {
