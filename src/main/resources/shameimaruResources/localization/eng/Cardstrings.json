@@ -51,8 +51,8 @@
     "DESCRIPTION": "Force the enemy to attack if possible. NL If the enemy is already attacking, gain !B! block."
   },
 
-  "${ModID}:Photocopier": {
-    "NAME": "Photocopier",
+  "${ModID}:PressRelease": {
+    "NAME": "Press Release",
     "DESCRIPTION": "Gain !B! Block. NL Copy a *Photograph in your hand."
   },
 

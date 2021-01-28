@@ -12,9 +12,9 @@ import static Shameimaru.util.actionShortcuts.atb;
 import static Shameimaru.util.actionShortcuts.doDef;
 
 
-public class Photocopier extends abs_aya_card {
+public class PressRelease extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
-            Photocopier.class.getSimpleName(),
+            PressRelease.class.getSimpleName(),
             COSTS[1],
             AbstractCard.CardType.SKILL,
             AbstractCard.CardTarget.SELF
@@ -23,7 +23,7 @@ public class Photocopier extends abs_aya_card {
     private static final int BLOCK = 7;
     private static final int UPG_BLOCK = 4;
     private static final int COPIES_AMOUNT = 1;
-    public Photocopier() {
+    public PressRelease() {
         super(cardInfo, false);
         setBlock(BLOCK, UPG_BLOCK);
         setMagic(COPIES_AMOUNT);
