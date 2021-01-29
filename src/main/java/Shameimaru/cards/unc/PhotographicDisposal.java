@@ -1,5 +1,6 @@
 package Shameimaru.cards.unc;
 
+import Shameimaru.actions.PhotographicDisposalAction;
 import Shameimaru.actions.photograph.duplicatePhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
@@ -11,25 +12,24 @@ import static Shameimaru.Shameimaru.makeID;
 import static Shameimaru.util.actionShortcuts.atb;
 import static Shameimaru.util.actionShortcuts.doDef;
 
-public class PressRelease extends abs_aya_card {
+public class PhotographicDisposal extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
-            PressRelease.class.getSimpleName(),
-            COSTS[1],
+            PhotographicDisposal.class.getSimpleName(),
+            COSTS[0],
             AbstractCard.CardType.SKILL,
             AbstractCard.CardTarget.SELF
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int BLOCK = 7;
-    private static final int UPG_BLOCK = 4;
-    private static final int COPIES_AMOUNT = 1;
-    public PressRelease() {
+    private static final int DRAW = 7;
+    private static final int UPG_DRAW = 1;
+    private static final int STR = 1;
+    private static final int UPG_STR = 1;
+    public PhotographicDisposal() {
         super(cardInfo, false);
-        setBlock(BLOCK, UPG_BLOCK);
-        setMagic(COPIES_AMOUNT);
+        setMagic(DRAW, UPG_DRAW);
+        setAyaMagic(STR, UPG_STR);
+        setExhaust(true);
     }
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        doDef(this.block);
-        atb(new duplicatePhotographAction(magicNumber));
-    }
+    public void use(AbstractPlayer p, AbstractMonster m) { atb(new PhotographicDisposalAction(magicNumber, ayaSecondMagicNumber)); }
 }

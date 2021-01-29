@@ -24,7 +24,7 @@ public abstract class abs_aya_card extends CustomCard {
     protected boolean upgradeDamage;
     protected boolean upgradeBlock;
     protected boolean upgradeMagic;
-    protected boolean upgradeMokouMagic;
+    protected boolean upgradeAyaMagic;
     protected int costUpgrade;
     protected int damageUpgrade;
     protected int blockUpgrade;
@@ -73,7 +73,7 @@ public abstract class abs_aya_card extends CustomCard {
         this.upgradeDamage = false;
         this.upgradeBlock = false;
         this.upgradeMagic = false;
-        this.upgradeMokouMagic = false;
+        this.upgradeAyaMagic = false;
         this.costUpgrade = cost;
         this.damageUpgrade = 0;
         this.blockUpgrade = 0;
@@ -124,13 +124,11 @@ public abstract class abs_aya_card extends CustomCard {
             this.magicUpgrade = magicUpgrade;
         }
     }
-    public void setMokouMagic(int magic) {
-        this.setMokouMagic(magic, 0);
-    }
-    public void setMokouMagic(int magic, int magicUpgrade) {
+    public void setAyaMagic(int magic) { this.setAyaMagic(magic, 0); }
+    public void setAyaMagic(int magic, int magicUpgrade) {
         this.ayaBaseSecondMagicNumber = this.ayaSecondMagicNumber = magic;
         if (magicUpgrade != 0) {
-            this.upgradeMokouMagic = true;
+            this.upgradeAyaMagic = true;
             this.GMMagicUpgrade = magicUpgrade;
         }
     }
@@ -197,7 +195,7 @@ public abstract class abs_aya_card extends CustomCard {
             ((abs_aya_card) card).upgradeDamage = this.upgradeDamage;
             ((abs_aya_card) card).upgradeBlock = this.upgradeBlock;
             ((abs_aya_card) card).upgradeMagic = this.upgradeMagic;
-            ((abs_aya_card) card).upgradeMokouMagic = this.upgradeMokouMagic;
+            ((abs_aya_card) card).upgradeAyaMagic = this.upgradeAyaMagic;
             ((abs_aya_card) card).costUpgrade = this.costUpgrade;
             ((abs_aya_card) card).damageUpgrade = this.damageUpgrade;
             ((abs_aya_card) card).blockUpgrade = this.blockUpgrade;
@@ -232,7 +230,7 @@ public abstract class abs_aya_card extends CustomCard {
             if (upgradeDamage) { this.upgradeDamage(damageUpgrade); }
             if (upgradeBlock) { this.upgradeBlock(blockUpgrade); }
             if (upgradeMagic) { this.upgradeMagicNumber(magicUpgrade); }
-            if (upgradeMokouMagic) { this.upgradeGMSecondMagicNumber(GMMagicUpgrade); }
+            if (upgradeAyaMagic) { this.upgradeGMSecondMagicNumber(GMMagicUpgrade); }
             if (baseExhaust ^ upgradeExhaust) { this.exhaust = upgradeExhaust; }
             if (baseInnate ^ upgradeInnate) { this.isInnate = upgradeInnate; }
             if (baseRetain ^ upgradeRetain) { this.selfRetain = upgradeRetain; }

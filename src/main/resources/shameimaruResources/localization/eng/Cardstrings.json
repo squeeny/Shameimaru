@@ -67,6 +67,11 @@
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Upgrade a *Photograph in your hand twice."
   },
 
+  "${ModID}:PhotographicDisposal": {
+    "NAME": "Photographic Disposal",
+    "DESCRIPTION": "Discard your hand. Draw !M! cards. NL If you would discard a *Photograph, Exhaust it instead, and gain !${ModID}:M! Strength."
+  },
+
   "${ModID}:TemporaryPowerDemo": {
     "NAME": "Auto-Generated Temporary Power",
     "DESCRIPTION": "Whenever you Scry this turn, gain !M! Block."
