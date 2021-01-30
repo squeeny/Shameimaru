@@ -1,8 +1,8 @@
-package Shameimaru.cards.sp;
+package Shameimaru.cards.sp.photograph;
 
 import Shameimaru.cards.abs.abs_aya_card;
-import Shameimaru.cards.sp.core.drawCard;
-import Shameimaru.cards.sp.core.powerCard;
+import Shameimaru.cards.sp.photograph.core.drawCard;
+import Shameimaru.cards.sp.photograph.core.powerCard;
 import Shameimaru.enums.CardENUMs;
 import Shameimaru.util.CardInfo;
 import basemod.AutoAdd;
@@ -11,12 +11,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 
 import java.util.ArrayList;
 
 import static Shameimaru.Shameimaru.makeID;
-import static Shameimaru.util.actionShortcuts.*;
 
 @AutoAdd.Ignore
 public class Photograph extends abs_aya_card {
@@ -38,6 +36,10 @@ public class Photograph extends abs_aya_card {
         for(AbstractCard c: cards){
             if(c.baseDamage > 0){ attacking = true; }
             if(c.baseBlock > 0){ blocking = true; }
+            if(c instanceof powerCard) {
+                AbstractPower p = ReflectionHacks.getPrivate(c, powerCard.class, "power");
+                if (p.type == AbstractPower.PowerType.DEBUFF) { attacking = true; }
+            }
         }
         if(card.isEmpty()){ card.add(new drawCard(EMERGENCY_DRAW)); }
         if(attacking){

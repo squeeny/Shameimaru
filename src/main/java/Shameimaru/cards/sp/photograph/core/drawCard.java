@@ -1,4 +1,4 @@
-package Shameimaru.cards.sp.core;
+package Shameimaru.cards.sp.photograph.core;
 
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;

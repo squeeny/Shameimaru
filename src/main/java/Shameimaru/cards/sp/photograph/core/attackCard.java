@@ -1,14 +1,12 @@
-package Shameimaru.cards.sp.core;
+package Shameimaru.cards.sp.photograph.core;
 
 import Shameimaru.cards.abs.abs_aya_card;
-import Shameimaru.cards.unc.WidespreadPropaganda;
 import Shameimaru.powers.WidespreadPropagandaPower;
 import Shameimaru.util.CardInfo;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static Shameimaru.Shameimaru.makeID;
 import static Shameimaru.util.actionShortcuts.*;

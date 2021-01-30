@@ -127,7 +127,7 @@ public class actionShortcuts {
     }
     public static boolean isBlockIntent(Intent intent) {
         return
-                intent == Intent.DEBUFF ||
+                intent == Intent.DEFEND ||
                         intent == Intent.DEFEND_BUFF ||
                         intent == Intent.DEFEND_DEBUFF ||
                         intent == Intent.ATTACK_DEFEND;

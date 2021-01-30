@@ -1,6 +1,6 @@
 package Shameimaru.actions.photograph;
 
-import Shameimaru.cards.sp.Photograph;
+import Shameimaru.cards.sp.photograph.Photograph;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;

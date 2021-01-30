@@ -1,9 +1,11 @@
 package Shameimaru.actions.photograph;
 
-import Shameimaru.cards.sp.Photograph;
-import Shameimaru.cards.sp.core.attackCard;
-import Shameimaru.cards.sp.core.blockCard;
-import Shameimaru.cards.sp.core.powerCard;
+import Shameimaru.cards.sp.photograph.Photograph;
+import Shameimaru.cards.sp.photograph.blacklist.blacklistedPowers;
+import Shameimaru.cards.sp.photograph.core.attackCard;
+import Shameimaru.cards.sp.photograph.core.blockCard;
+import Shameimaru.cards.sp.photograph.core.drawCard;
+import Shameimaru.cards.sp.photograph.core.powerCard;
 import basemod.ReflectionHacks;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
@@ -16,6 +18,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.beyond.Transient;
 import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.ArrayList;
 
@@ -77,8 +80,11 @@ public class createPhotographAction extends AbstractGameAction {
     public void setPowerActions(){
         for(AbstractGameAction a: powerActions) {
             if(a instanceof ApplyPowerAction){
-                powerCard p = new powerCard(ReflectionHacks.getPrivate(a, ApplyPowerAction.class, "powerToApply"), a.amount);
-                c.add(p);
+                AbstractPower powerToApply = ReflectionHacks.getPrivate(a, ApplyPowerAction.class, "powerToApply");
+                if(blacklistedPowers.notBlacklistedPower(powerToApply.ID)) {
+                    powerCard p = new powerCard(ReflectionHacks.getPrivate(a, ApplyPowerAction.class, "powerToApply"), a.amount);
+                    c.add(p);
+                }
             }
         }
     }
