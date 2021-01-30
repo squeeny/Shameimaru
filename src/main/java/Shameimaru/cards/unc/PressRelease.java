@@ -19,7 +19,7 @@ public class PressRelease extends abs_aya_card {
             AbstractCard.CardTarget.SELF
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int BLOCK = 7;
+    private static final int BLOCK = 8;
     private static final int UPG_BLOCK = 4;
     private static final int COPIES_AMOUNT = 1;
     public PressRelease() {
