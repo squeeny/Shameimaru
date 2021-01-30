@@ -12,10 +12,9 @@ import static Shameimaru.Shameimaru.makeID;
 import static Shameimaru.util.actionShortcuts.atb;
 import static Shameimaru.util.actionShortcuts.doDmg;
 
-
-public class Strike extends abs_aya_card {
+public class SnapshotStrike extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
-            Strike.class.getSimpleName(),
+            SnapshotStrike.class.getSimpleName(),
             COSTS[1],
             AbstractCard.CardType.ATTACK,
             AbstractCard.CardTarget.ENEMY
@@ -23,9 +22,10 @@ public class Strike extends abs_aya_card {
     public static final String ID = makeID(cardInfo.cardName);
     private static final int DMG = 6;
     private static final int UPG_DMG = 3;
-    public Strike() {
+    public SnapshotStrike() {
         super(cardInfo, false);
         setDamage(DMG, UPG_DMG);
+        this.tags.remove(CardTags.STARTER_STRIKE);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

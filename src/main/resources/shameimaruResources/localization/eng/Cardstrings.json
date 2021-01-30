@@ -40,7 +40,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-
+  "${ModID}:SnapshotStrike": {
+    "NAME": "Snapshot Strike",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Snapshot"
+  },
   "${ModID}:EmptyThreat": {
     "NAME": "EmptyThreat",
     "DESCRIPTION": "Force the enemy to defend if possible. NL If the enemy is already defending, deal !D! damage."
