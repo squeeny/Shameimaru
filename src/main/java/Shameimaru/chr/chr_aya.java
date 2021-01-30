@@ -1,7 +1,8 @@
 package Shameimaru.chr;
 
 import Shameimaru.cards.bas.Defend;
-import Shameimaru.cards.com.PlayfulTaunt;
+import Shameimaru.cards.bas.EmptyThreat;
+import Shameimaru.cards.bas.PlayfulTaunt;
 import Shameimaru.cards.bas.Strike;
 import Shameimaru.relics.TodoItem;
 import Shameimaru.util.BetterSpriterAnimation;
