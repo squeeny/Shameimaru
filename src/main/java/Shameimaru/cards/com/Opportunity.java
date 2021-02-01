@@ -9,12 +9,12 @@ import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import java.util.ArrayList;
 
 import static Shameimaru.Shameimaru.makeID;
-import static Shameimaru.util.actionShortcuts.atb;
-import static Shameimaru.util.actionShortcuts.getAliveMonsters;
+import static Shameimaru.util.actionShortcuts.*;
 
 public class Opportunity extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
@@ -32,17 +32,19 @@ public class Opportunity extends abs_aya_card {
         super(cardInfo, false);
         setMagic(VULN, UPG_VULNERABLE);
         setAyaMagic(DRAW);
+        setRetain(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        createDummyCardListForAction();
+        doDraw(DRAW);
+        if(!isAttackIntent(m.intent)){ doPow(m, new VulnerablePower(m, magicNumber, false)); }
     }
     @Override
     public void triggerOnGlowCheck() {
         glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         for (AbstractMonster m : getAliveMonsters()) {
-            if (m.getIntentBaseDmg() >= 0) {
+            if (!isAttackIntent(m.intent)) {
                 glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 break;
             }

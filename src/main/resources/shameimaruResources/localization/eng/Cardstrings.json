@@ -95,5 +95,9 @@
     "NAME": "Whispers Of The Wind",
     "DESCRIPTION": "Put 1 card from your draw pile into your hand. NL Discard a card at random.",
     "UPGRADE_DESCRIPTION": "Put 1 card from your draw pile into your hand. NL Discard a card."
+  },
+  "${ModID}:Opportunity": {
+    "NAME": "Opportunity",
+    "DESCRIPTION": "Draw !${ModID}:M! card. If target intends to not attack this turn, apply !M! Vulnerable."
   }
 }
