@@ -19,7 +19,7 @@ import static Shameimaru.util.actionShortcuts.doDmg;
 public class foresightAttack extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             foresightAttack.class.getSimpleName(),
-            COSTS[0],
+            COST_UNPLAYABLE,
             AbstractCard.CardType.ATTACK,
             AbstractCard.CardTarget.ENEMY
     );

@@ -21,7 +21,7 @@ public class Opportunity extends abs_aya_card {
             Opportunity.class.getSimpleName(),
             COSTS[0],
             CardType.SKILL,
-            CardTarget.SELF
+            CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
     private static final int VULN = 2;

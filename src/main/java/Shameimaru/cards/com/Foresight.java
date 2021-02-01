@@ -64,6 +64,9 @@ public class Foresight extends abs_aya_card {
         optionCards.add(c);
         c = new foresightPower(this);
         optionCards.add(c);
+        for(AbstractCard cc: optionCards){
+            if(this.upgraded){ cc.upgrade(); }
+        }
         atb(new ChooseOneAction(optionCards));
     }
 }

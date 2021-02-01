@@ -45,6 +45,15 @@
     "DESCRIPTION": "Guess that the card drawn is an Power."
   },
 
+  "${ModID}:Distraught": {
+    "NAME": "Distraught",
+    "DESCRIPTION": "Target enemy gains !M! Weak."
+  },
+  "${ModID}:Enrage": {
+    "NAME": "Enrage",
+    "DESCRIPTION": "Target enemy gains !M! *Enrage."
+  },
+
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
@@ -99,5 +108,13 @@
   "${ModID}:Opportunity": {
     "NAME": "Opportunity",
     "DESCRIPTION": "Draw !${ModID}:M! card. If target intends to not attack this turn, apply !M! Vulnerable."
+  },
+  "${ModID}:LoadedStatement": {
+    "NAME": "Loaded Statement",
+    "DESCRIPTION": "${ModID}:Adaptive: NL *Distraught. NL *Enrage."
+  },
+  "${ModID}:Photocopier": {
+    "NAME": "Photocopier.",
+    "DESCRIPTION": "Select a card in your deck. Add a copy of it to your deck. Gain [E] and Draw !M! card for every !${ModID}:M! copies of that card in your deck."
   }
 }

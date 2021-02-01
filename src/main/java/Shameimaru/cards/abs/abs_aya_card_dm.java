@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 
 import java.util.ArrayList;
 
-abstract class abs_aya_card_dm extends abs_aya_card {
+public abstract class abs_aya_card_dm extends abs_aya_card {
     private float rotationTimer = getRotationTimeNeeded();
     private int previewIndex;
     protected ArrayList<AbstractCard> cardToPreview = new ArrayList<>();

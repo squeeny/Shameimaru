@@ -17,7 +17,7 @@ import static Shameimaru.util.actionShortcuts.atb;
 public class foresightPower extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             foresightPower.class.getSimpleName(),
-            COSTS[0],
+            COST_UNPLAYABLE,
             CardType.POWER,
             AbstractCard.CardTarget.ENEMY
     );
