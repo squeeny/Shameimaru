@@ -1,4 +1,4 @@
-package Shameimaru.cards.com;
+package Shameimaru.cards.unc;
 
 import Shameimaru.actions.photograph.upgradePhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
