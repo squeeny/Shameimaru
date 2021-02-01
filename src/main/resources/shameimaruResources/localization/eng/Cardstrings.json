@@ -121,5 +121,10 @@
     "NAME": "Imitation.",
     "DESCRIPTION": "Draw !M! card. NL ${ModID}:Snapshot",
     "UPGRADE_DESCRIPTION": "Draw !M! card. NL ${ModID}:Snapshot+"
+  },
+  "${ModID}:Photoshoot": {
+    "NAME": "Photoshoot.",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Snapshot",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL ${ModID}:Snapshot+"
   }
 }
