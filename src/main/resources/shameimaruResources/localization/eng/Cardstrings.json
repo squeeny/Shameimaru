@@ -90,5 +90,10 @@
     "NAME": "Preparation",
     "DESCRIPTION": "Draw !M! cards. NL Discard !${ModID}:M! cards.",
     "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Discard up to !${ModID}:M! cards."
+  },
+  "${ModID}:WhispersOfTheWind": {
+    "NAME": "Whispers Of The Wind",
+    "DESCRIPTION": "Put 1 card from your draw pile into your hand. NL Discard a card at random.",
+    "UPGRADE_DESCRIPTION": "Put 1 card from your draw pile into your hand. NL Discard a card."
   }
 }
