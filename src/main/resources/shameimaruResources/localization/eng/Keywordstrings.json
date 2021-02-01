@@ -13,7 +13,7 @@
     "NAMES": [
       "snapshot"
     ],
-    "DESCRIPTION": "Create a #yphotograph with the same properties of the enemy's action"
+    "DESCRIPTION": "Create a #yPhotograph with the same properties of the enemy's action. NL If this card says Snapshot+, the #yPhotograph card is upgraded."
   },
 
   {
@@ -21,7 +21,7 @@
     "NAMES": [
       "snapshot+"
     ],
-    "DESCRIPTION": "Create a #yphotograph with the same properties of the enemy's action. Then upgrade it."
+    "DESCRIPTION": "Create a #yPhotograph with the same properties of the enemy's action. Then upgrade it."
   },
 
   {

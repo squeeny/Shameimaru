@@ -19,7 +19,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.beyond.Transient;
 import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 
 import java.util.ArrayList;
 
