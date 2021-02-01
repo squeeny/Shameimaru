@@ -39,11 +39,7 @@ An example of this was from when I competitvely played the pokemon TCG, was a [N
 
 Aya's playstyle and inspiration came from my love for the playstyle of these deck styles, and I wanted to emulate something similar in this mod.
 
-# Check out the design document.
-
-```
-# [doc]
-```
+# Check out the [design document][doc].
 
 [cinc]: https://limitlesstcg.com/decks/?list=3835
 [doc]: https://docs.google.com/spreadsheets/d/1VY3LyJdfLndkjRdzCCSlDByOHns7W96TRYzdDJk8C6Q/edit#gid=1231978568
