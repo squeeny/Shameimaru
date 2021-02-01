@@ -85,5 +85,10 @@
   "${ModID}:Foresight": {
     "NAME": "Foresight",
     "DESCRIPTION": "Choose a type of card. NL Draw !${ModID}:M! card. NL If that card was that type, gain !B! Block. NL Otherwise, gain !M! Block."
+  },
+  "${ModID}:Preparation": {
+    "NAME": "Preparation",
+    "DESCRIPTION": "Draw !M! cards. NL Discard !${ModID}:M! cards.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Discard up to !${ModID}:M! cards."
   }
 }
