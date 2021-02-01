@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.beyond.Transient;
 import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 
 import java.util.ArrayList;
 
@@ -33,11 +34,15 @@ public class createPhotographAction extends AbstractGameAction {
 
     private boolean firstFrame;
     private AbstractMonster m;
+    private boolean snapshotPlus;
 
-    public createPhotographAction(AbstractMonster source) {
+    public createPhotographAction(AbstractMonster source) { this(source, false); }
+
+    public createPhotographAction(AbstractMonster source, boolean snapshotPlus) {
         this.firstFrame = true;
         this.duration = Settings.ACTION_DUR_FAST;
         m = source;
+        this.snapshotPlus = snapshotPlus;
     }
 
     public void update() {
@@ -56,6 +61,7 @@ public class createPhotographAction extends AbstractGameAction {
             setPowerActions();
             photograph = new Photograph(c);
             AbstractDungeon.actionManager = tmp;
+            if(snapshotPlus){ photograph.upgrade(); }
             att(new MakeTempCardInHandAction(photograph));
             this.isDone = true;
         }
