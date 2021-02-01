@@ -13,7 +13,7 @@ Of course, photographs also copy other enemy actions. For example, on cultist's 
 
 Evasion, and it's active counterpart Evasive, are gained as the player draws cards. It is meant to thematically resemble high speed, and reward the player for constantly going through their deck.
 
-Evasion is a simple resource, and is what is gained, as mentioned. When 25 Evasion is gained, 1 Evasive is gained, which prevents ALL damage that turn. (Thematically, you were so fast drawing, the enemies can't keep up with you, and thus hit you. Plus, Aya is "The fastest in Gensokyo." 
+Evasion is a simple resource, and is what is gained, as mentioned. When 25 Evasion is gained, 1 Evasive is gained, which prevents ALL damage that turn. (Thematically, you were so fast drawing, the enemies can't keep up with you, and thus hit you. Plus, Aya is "The fastest in Gensokyo.")
 
 This way of generating Evasion, is often tied to discard synergy, which further boosts your draws, gains you resources, and has some fun one off effects. Alternatively, some of the cards thin the deck, letting you loop, and loop your draw engine back again. This draw/discard synergy is also expanded on in powers, inside of Aya's draft.
 
