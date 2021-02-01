@@ -1,7 +1,6 @@
-package Shameimaru.cards.unc;
+package Shameimaru.cards.rar;
 
 import Shameimaru.actions.PhotographicDisposalAction;
-import Shameimaru.actions.photograph.duplicatePhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.cards.AbstractCard;
