@@ -53,6 +53,11 @@
     "NAME": "Enrage",
     "DESCRIPTION": "Target enemy gains !M! *Enrage."
   },
+  "${ModID}:peerlessWindOption": {
+    "NAME": "Peerless Wind",
+    "DESCRIPTION": "Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards next turn."
+  },
 
   "${ModID}:Strike": {
     "NAME": "Strike",
@@ -156,5 +161,9 @@
     "NAME": "Sudden Outburst",
     "DESCRIPTION": "Deal !D! damage and ${ModID}:Snapshot a random enemy.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and L ${ModID}:Snapshot+ a random enemy."
+  },
+  "${ModID}:PeerlessWind": {
+    "NAME": "Peerless Wind",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Adaptive: NL Draw !M! cards. NL Draw !M! cards next turn."
   }
 }
