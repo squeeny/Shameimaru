@@ -143,5 +143,9 @@
   "${ModID}:GustFan": {
     "NAME": "Gust Fan",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL If target enemy intends to attack, draw !M! card."
+  },
+  "${ModID}:ReporterInstinct": {
+    "NAME": "Reporter's Instinct",
+    "DESCRIPTION": "If target intends to attack, gain !B! Block. NL Otherwise, deal !D! damage."
   }
 }

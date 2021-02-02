@@ -39,7 +39,7 @@ public class GustFan extends abs_aya_card {
     public void triggerOnGlowCheck() {
         glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         for (AbstractMonster m : getAliveMonsters()) {
-            if (!isAttackIntent(m.intent)) {
+            if (isAttackIntent(m.intent)) {
                 glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 break;
             }

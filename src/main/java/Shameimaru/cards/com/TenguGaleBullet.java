@@ -16,7 +16,7 @@ public class TenguGaleBullet extends abs_aya_card {
             TenguGaleBullet.class.getSimpleName(),
             COSTS[1],
             AbstractCard.CardType.ATTACK,
-            AbstractCard.CardTarget.ENEMY
+            CardTarget.ALL_ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
     private static final int DMG = 8;
