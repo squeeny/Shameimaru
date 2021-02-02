@@ -114,17 +114,22 @@
     "DESCRIPTION": "${ModID}:Adaptive: NL *Distraught. NL *Enrage."
   },
   "${ModID}:Photocopier": {
-    "NAME": "Photocopier.",
+    "NAME": "Photocopier",
     "DESCRIPTION": "Select a card in your deck. Add a copy of it to your deck. Gain [E] and Draw !M! card for every !${ModID}:M! copies of that card in your deck."
   },
   "${ModID}:Imitation": {
-    "NAME": "Imitation.",
+    "NAME": "Imitation",
     "DESCRIPTION": "Draw !M! card. NL ${ModID}:Snapshot",
     "UPGRADE_DESCRIPTION": "Draw !M! card. NL ${ModID}:Snapshot+"
   },
   "${ModID}:Photoshoot": {
-    "NAME": "Photoshoot.",
+    "NAME": "Photoshoot",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Snapshot",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL ${ModID}:Snapshot+"
+  },
+  "${ModID}:CandidShot": {
+    "NAME": "Candid Shot",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Snapshot",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL ${ModID}:Snapshot+"
   }
 }
