@@ -174,5 +174,9 @@
   "${ModID}:Galeforce": {
     "NAME": "Galeforce",
     "DESCRIPTION": "Deal !D! damage. NL If Fatal: NL Gain [E] . NL Draw !M! card."
+  },
+  "${ModID}:BreezeOfReminiscience": {
+    "NAME": "Breeze Of Reminiscience",
+    "DESCRIPTION": "Deal !D! damage. NL Return a card from your draw pile into your hand.its u"
   }
 }
