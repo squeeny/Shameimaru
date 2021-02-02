@@ -177,6 +177,11 @@
   },
   "${ModID}:BreezeOfReminiscience": {
     "NAME": "Breeze Of Reminiscience",
-    "DESCRIPTION": "Deal !D! damage. NL Return a card from your draw pile into your hand.its u"
+    "DESCRIPTION": "Deal !D! damage. NL Return a card from your draw pile into your hand."
+  },
+  "${ModID}:GaleBlade": {
+    "NAME": "Gale Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E] .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain [E] [E] ."
   }
 }
