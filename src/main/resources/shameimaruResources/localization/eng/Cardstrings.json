@@ -55,8 +55,8 @@
   },
   "${ModID}:peerlessWindOption": {
     "NAME": "Peerless Wind",
-    "DESCRIPTION": "Draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards next turn."
+    "DESCRIPTION": "Draw !M! cards next turn.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards."
   },
 
   "${ModID}:Strike": {

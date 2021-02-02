@@ -2,8 +2,10 @@ package Shameimaru.cards.sp.peerlessWind;
 
 import Shameimaru.actions.unique.foresight.foresightCardAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.cards.unc.PeerlessWind;
 import Shameimaru.util.CardInfo;
 import basemod.AutoAdd;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -16,9 +18,9 @@ import static Shameimaru.util.actionShortcuts.*;
 @AutoAdd.Ignore
 public class peerlessWindOption extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
-            Shameimaru.cards.sp.foresight.foresightSkill.class.getSimpleName(),
+            peerlessWindOption.class.getSimpleName(),
             COST_UNPLAYABLE,
-            CardType.SKILL,
+            CardType.ATTACK,
             AbstractCard.CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
@@ -28,10 +30,8 @@ public class peerlessWindOption extends abs_aya_card {
         super(cardInfo, false);
         optionChosen = option;
         setMagic(DRAW);
-        if(optionChosen){
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
-        }
+        if(optionChosen){ this.rawDescription = cardStrings.UPGRADE_DESCRIPTION; }
+        this.initializeDescription();
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }
@@ -40,4 +40,5 @@ public class peerlessWindOption extends abs_aya_card {
         if(optionChosen){ doDraw(magicNumber); }
         else { doPow(p(), new DrawCardNextTurnPower(p(), magicNumber)); }
     }
+
 }
