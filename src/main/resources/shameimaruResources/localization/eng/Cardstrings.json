@@ -170,5 +170,9 @@
     "NAME": "Hurricane Of Freedom",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Discard !M! card at random.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Discard !M! card."
+  },
+  "${ModID}:Galeforce": {
+    "NAME": "Galeforce",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal: NL Gain [E] . NL Draw !M! card."
   }
 }
