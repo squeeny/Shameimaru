@@ -135,5 +135,9 @@
   "${ModID}:TenguGaleBullet": {
     "NAME": "Tengu Gale Bullet",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL When discarded, deal !D! damage to ALL enemies."
+  },
+  "${ModID}:Persuade": {
+    "NAME": "Persuade",
+    "DESCRIPTION": "Deal !D! damage. NL Force target enemy not to attack if possible."
   }
 }

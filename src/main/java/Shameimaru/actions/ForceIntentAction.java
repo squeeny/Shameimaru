@@ -44,7 +44,7 @@ public class ForceIntentAction extends AbstractGameAction {
             case ATTACK:
                 predicateIntentChanger = attackTest;
                 break;
-            case DEFEND:
+            case NOT_ATTACK:
                 predicateIntentChanger = blockTest;
                 break;
             default:
