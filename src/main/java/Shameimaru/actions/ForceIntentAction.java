@@ -21,7 +21,7 @@ public class ForceIntentAction extends AbstractGameAction {
 
     private IntentSwitcher intent;
     public static Predicate<AbstractMonster> attackTest = (mo) -> isAttackIntent(mo.intent);
-    public static Predicate<AbstractMonster> blockTest = (mo) -> isBlockIntent(mo.intent);
+    public static Predicate<AbstractMonster> blockTest = (mo) -> !isAttackIntent(mo.intent);
 
     private AbstractPlayer p;
     private AbstractMonster m;

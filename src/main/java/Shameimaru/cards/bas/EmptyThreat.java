@@ -30,6 +30,6 @@ public class EmptyThreat extends abs_aya_card {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (isBlockIntent(m.intent)) { doDmg(m, this.damage); }
-        else { atb(new ForceIntentAction(p, m, IntentSwitcher.DEFEND)); }
+        else { atb(new ForceIntentAction(p, m, IntentSwitcher.NOT_ATTACK)); }
     }
 }

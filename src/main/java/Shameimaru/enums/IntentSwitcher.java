@@ -2,5 +2,5 @@ package Shameimaru.enums;
 
 public enum IntentSwitcher {
     ATTACK,
-    DEFEND
+    NOT_ATTACK
 }
