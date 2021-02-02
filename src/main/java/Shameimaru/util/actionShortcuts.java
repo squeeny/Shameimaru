@@ -97,6 +97,8 @@ public class actionShortcuts {
     public static ArrayList<AbstractMonster> getAliveMonsters() { return AbstractDungeon.getMonsters().monsters.stream().filter(m -> !m.isDeadOrEscaped()).collect(Collectors.toCollection(ArrayList::new)); }
     // Fetches a random monster who is alive.
     public static AbstractMonster getRandomAliveMonster(MonsterGroup group, Predicate<AbstractMonster> isCandidate, Random rng) { return getRandomMonster(group, m -> (!m.halfDead && !m.isDying && !m.isEscaping && isCandidate.test(m)), rng); }
+    // Fetches a random monster (No Predicate)
+    public static AbstractMonster getRandomAliveMonster(MonsterGroup group, Random rng) { return getRandomMonster(group, m -> (!m.halfDead && !m.isDying && !m.isEscaping), rng); }
     // Fetches a random monster.
     public static AbstractMonster getRandomMonster(MonsterGroup group, Predicate<AbstractMonster> isCandidate, Random rng) {
         List<AbstractMonster> candidates = group.monsters.stream().filter(isCandidate).collect(Collectors.toList());

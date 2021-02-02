@@ -23,7 +23,7 @@ public class GustFan extends abs_aya_card {
     private static final int UPG_DMG = 2;
     private static final int DRAW = 1;
     public GustFan() {
-        super(cardInfo, true);
+        super(cardInfo, false);
         setDamage(DMG, UPG_DMG);
         setMagic(DRAW);
     }

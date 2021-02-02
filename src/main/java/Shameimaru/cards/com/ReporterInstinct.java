@@ -23,7 +23,7 @@ public class ReporterInstinct extends abs_aya_card {
     private static final int BLOCK = 15;
     private static final int UPG_BLOCK = 5;
     public ReporterInstinct() {
-        super(cardInfo, true);
+        super(cardInfo, false);
         setDamage(DMG, UPG_DMG);
         setBlock(BLOCK, UPG_BLOCK);
     }

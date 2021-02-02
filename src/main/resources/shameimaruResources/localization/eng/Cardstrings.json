@@ -151,5 +151,10 @@
   "${ModID}:AirCutter": {
     "NAME": "Air Cutter",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL Discard !${ModID}:M! card."
+  },
+  "${ModID}:SuddenOutburst": {
+    "NAME": "Sudden Outburst",
+    "DESCRIPTION": "Deal !D! damage and ${ModID}:Snapshot a random enemy.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and L ${ModID}:Snapshot+ a random enemy."
   }
 }
