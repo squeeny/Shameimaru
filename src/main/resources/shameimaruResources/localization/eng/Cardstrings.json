@@ -147,5 +147,9 @@
   "${ModID}:ReporterInstinct": {
     "NAME": "Reporter's Instinct",
     "DESCRIPTION": "If target intends to attack, gain !B! Block. NL Otherwise, deal !D! damage."
+  },
+  "${ModID}:AirCutter": {
+    "NAME": "Air Cutter",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL Discard !${ModID}:M! card."
   }
 }
