@@ -139,5 +139,9 @@
   "${ModID}:Persuade": {
     "NAME": "Persuade",
     "DESCRIPTION": "Deal !D! damage. NL Force target enemy not to attack if possible."
+  },
+  "${ModID}:GustFan": {
+    "NAME": "Gust Fan",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL If target enemy intends to attack, draw !M! card."
   }
 }
