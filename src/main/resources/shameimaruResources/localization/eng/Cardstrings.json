@@ -165,5 +165,10 @@
   "${ModID}:PeerlessWind": {
     "NAME": "Peerless Wind",
     "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Adaptive: NL Draw !M! cards. NL Draw !M! cards next turn."
+  },
+  "${ModID}:HurricaneOfFreedom": {
+    "NAME": "Hurricane Of Freedom",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Discard !M! card at random.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Discard !M! card."
   }
 }
