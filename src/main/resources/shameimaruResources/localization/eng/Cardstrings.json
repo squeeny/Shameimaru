@@ -58,7 +58,14 @@
     "DESCRIPTION": "Draw !M! cards next turn.",
     "UPGRADE_DESCRIPTION": "Draw !M! cards."
   },
-
+  "${ModID}:FlatteringReport": {
+    "NAME": "Flattering Report",
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn."
+  },
+  "${ModID}:ControversialReport": {
+    "NAME": "Controversial Report",
+    "DESCRIPTION": "ALL enemies gain !M! Strength."
+  },
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
@@ -188,5 +195,9 @@
     "NAME": "Frantic Search",
     "DESCRIPTION": "Deal !D! damage. NL Draw cards until your hand is full. NL Discard !M! cards at random.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw cards until your hand is full. NL Discard !M! cards."
+  },
+  "${ModID}:CoerciveReport": {
+    "NAME": "Coercive Report",
+    "DESCRIPTION": "${ModID}:Adaptive: NL *Flattering *Report* NL *Controversial *Report"
   }
 }
