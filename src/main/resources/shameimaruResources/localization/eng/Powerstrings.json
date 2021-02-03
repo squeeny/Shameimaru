@@ -18,5 +18,12 @@
       "Gain a Photograph at the start of next turn.",
       "Gain a Photograph at the start of next turn and double its effects."
     ]
+  },
+  "${ModID}:QuickReportingPower": {
+    "NAME": "Quick Reporting",
+    "DESCRIPTIONS": [
+      "#ySnapshot a random enemy at the start of your turn.",
+      "#ySnapshot #b%1$s random enemies at the start of your turn."
+    ]
   }
 }

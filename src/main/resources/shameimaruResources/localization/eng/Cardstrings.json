@@ -246,5 +246,9 @@
   "${ModID}:CherishingBreeze": {
     "NAME": "Cherishing Breeze",
     "DESCRIPTION": "Gain !B! Block. NL Discard any number of cards. NL Gain [E] for each card discarded."
+  },
+  "${ModID}:QuickReporting": {
+    "NAME": "Quick Reporting",
+    "DESCRIPTION": "At the start of your turn, ${ModID}:Snapshot a random enemy."
   }
 }
