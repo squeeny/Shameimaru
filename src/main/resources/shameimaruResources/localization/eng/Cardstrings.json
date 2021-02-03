@@ -223,5 +223,10 @@
     "NAME": "Dashing Domination",
     "DESCRIPTION": "Unplayable. NL When drawn, draw !M! card. NL When discarded, draw !${ModID}:M! cards.",
     "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, draw !M! card and gain [E] . NL When discarded, draw !${ModID}:M! cards."
+  },
+  "${ModID}:RapidFirePhotography": {
+    "NAME": "Rapid-Fire Photography",
+    "DESCRIPTION": "${ModID}:Snapshot X.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Snapshot+ X+1."
   }
 }
