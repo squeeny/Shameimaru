@@ -66,6 +66,11 @@
     "NAME": "Controversial Report",
     "DESCRIPTION": "ALL enemies gain !M! Strength."
   },
+  "${ModID}:massDeletionOption": {
+    "NAME": "Mass Deletion",
+    "DESCRIPTION": "Deal !D! damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block."
+  },
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
@@ -204,5 +209,9 @@
     "NAME": "GroupPhoto",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Snapshot ALL enemies.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL ${ModID}:Snapshot+ ALL enemies."
+  },
+  "${ModID}:MassDeletion": {
+    "NAME": "Mass Deletion",
+    "DESCRIPTION": "Discard your Draw Pile. NL For each card discarded, NL ${ModID}:Adaptive: NL Deal !D! damage to a random enemy. NL Gain !B! Block."
   }
 }
