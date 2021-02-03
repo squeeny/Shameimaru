@@ -258,5 +258,13 @@
   "${ModID}:Telescoping": {
     "NAME": "Telescoping",
     "DESCRIPTION": "You may always see the top !M! cards of your draw pile."
+  },
+  "${ModID}:ForseenReaction": {
+    "NAME": "Forseen Reaction",
+    "DESCRIPTION": "Gain Block equal to target enemy's intent. NL ",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to ALL incoming attack damage. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "Gain !M! Block."
+    ]
   }
 }
