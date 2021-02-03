@@ -254,5 +254,9 @@
   "${ModID}:FreezeFrame": {
     "NAME": "Freeze Frame",
     "DESCRIPTION": "Deal !D! damage. NL Target enemy repeats the same move next turn."
+  },
+  "${ModID}:Telescoping": {
+    "NAME": "Telescoping",
+    "DESCRIPTION": "You may always see the top !M! cards of your draw pile."
   }
 }

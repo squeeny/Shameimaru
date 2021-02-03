@@ -10,6 +10,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -55,6 +56,13 @@ public class Shameimaru implements
     private static final String CARD_ENERGY_L = getModID() + "Resources/images/1024/energy.png";
     private static final String CHARSELECT_BUTTON = getModID() + "Resources/images/charSelect/charButton.png";
     private static final String CHARSELECT_PORTRAIT = getModID() + "Resources/images/charSelect/charBG.png";
+
+    public static final String mintyID = "mintyspire";
+    public static final boolean hasMinty;
+    static {
+        hasMinty = Loader.isModLoaded(mintyID);
+        if (hasMinty) { System.out.println("has minty, very cool"); }
+    }
 
     public Shameimaru() {
         BaseMod.subscribe(this);

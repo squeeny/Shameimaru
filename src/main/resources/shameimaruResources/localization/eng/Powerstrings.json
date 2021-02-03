@@ -32,5 +32,9 @@
       "Target enemy repeats the current action next turn.",
       "Target enemy repeats the current action for #b%1$s turns."
     ]
+  },
+  "${ModID}:TelescopingPower": {
+    "NAME": "Telescope",
+    "DESCRIPTIONS": ["You may always see the top #b4 cards of your draw pile."]
   }
 }
