@@ -140,4 +140,13 @@ public class Photograph extends abs_aya_card {
         this.name = cardStrings.NAME + "+" + this.timesUpgraded;
         initializeTitle();
     }
+    public void doubleAllValues(){
+        for(AbstractCard c: card){
+            c.baseDamage *= 2;
+            c.baseBlock *= 2;
+            c.magicNumber *= 2;
+            c.applyPowers();
+        }
+
+    }
 }

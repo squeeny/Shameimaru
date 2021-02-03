@@ -25,15 +25,15 @@ import java.util.ArrayList;
 import static Shameimaru.util.actionShortcuts.*;
 
 public class createPhotographAction extends AbstractGameAction {
-    private int damage;
-    private int attack_times;
-    private int block;
-    private ArrayList<AbstractGameAction> powerActions = new ArrayList<>();
-    private ArrayList<AbstractCard> c = new ArrayList<>();
+    protected int damage;
+    protected int attack_times;
+    protected int block;
+    protected ArrayList<AbstractGameAction> powerActions = new ArrayList<>();
+    protected ArrayList<AbstractCard> c = new ArrayList<>();
 
-    private boolean firstFrame;
-    private AbstractMonster m;
-    private boolean snapshotPlus;
+    protected boolean firstFrame;
+    protected AbstractMonster m;
+    protected boolean snapshotPlus;
 
     public createPhotographAction(AbstractMonster source) { this(source, false); }
 
