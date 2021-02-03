@@ -218,5 +218,10 @@
     "NAME": "Winds Of Change",
     "DESCRIPTION": "Shuffle ALL your cards into your draw pile. NL Draw that many cards.",
     "UPGRADE_DESCRIPTION": "Shuffle ALL your cards into your draw pile. NL Draw that many cards plus two."
+  },
+  "${ModID}:DashingDomination": {
+    "NAME": "Dashing Domination",
+    "DESCRIPTION": "Unplayable. NL When drawn, draw !M! card. NL When discarded, draw !${ModID}:M! cards.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, draw !M! card and gain [E] . NL When discarded, draw !${ModID}:M! cards."
   }
 }
