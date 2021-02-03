@@ -250,5 +250,9 @@
   "${ModID}:QuickReporting": {
     "NAME": "Quick Reporting",
     "DESCRIPTION": "At the start of your turn, ${ModID}:Snapshot a random enemy."
+  },
+  "${ModID}:FreezeFrame": {
+    "NAME": "Freeze Frame",
+    "DESCRIPTION": "Deal !D! damage. NL Target enemy repeats the same move next turn."
   }
 }

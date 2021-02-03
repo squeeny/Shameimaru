@@ -25,5 +25,12 @@
       "#ySnapshot a random enemy at the start of your turn.",
       "#ySnapshot #b%1$s random enemies at the start of your turn."
     ]
+  },
+  "${ModID}:FreezeFramePower": {
+    "NAME": "Frozen",
+    "DESCRIPTIONS": [
+      "Target enemy repeats the current action next turn.",
+      "Target enemy repeats the current action for #b%1$s turns."
+    ]
   }
 }
