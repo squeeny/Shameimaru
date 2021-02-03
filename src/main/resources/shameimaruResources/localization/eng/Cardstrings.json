@@ -213,5 +213,10 @@
   "${ModID}:MassDeletion": {
     "NAME": "Mass Deletion",
     "DESCRIPTION": "Discard your Draw Pile. NL For each card discarded, NL ${ModID}:Adaptive: NL Deal !D! damage to a random enemy. NL Gain !B! Block."
+  },
+  "${ModID}:WindsOfChange": {
+    "NAME": "Winds Of Change",
+    "DESCRIPTION": "Shuffle ALL your cards into your draw pile. NL Draw that many cards.",
+    "UPGRADE_DESCRIPTION": "Shuffle ALL your cards into your draw pile. NL Draw that many cards plus two."
   }
 }
