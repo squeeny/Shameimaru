@@ -233,5 +233,10 @@
     "NAME": "Shoot The Bullet",
     "DESCRIPTION": "${ModID}:Snapshot NL Gain this *Snapshot at the start of next turn. NL If you take no damage this turn, double its effects.",
     "UPGRADE_DESCRIPTION": "${ModID}:Snapshot+ NL Gain this *Snapshot at the start of next turn. NL If you take no damage this turn, double its effects."
+  },
+  "${ModID}:InstantShotJournalist": {
+    "NAME": "Instant Shot Journalist",
+    "DESCRIPTION": "When drawn, ${ModID}:Snapshot ALL enemies. NL Draw !M! cards. NL Exhaust this card.",
+    "UPGRADE_DESCRIPTION": "When drawn, ${ModID}:Snapshot+ ALL enemies. NL Draw !M! cards. NL Exhaust this card."
   }
 }
