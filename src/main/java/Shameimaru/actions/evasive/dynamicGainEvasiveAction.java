@@ -35,9 +35,12 @@ public class dynamicGainEvasiveAction extends AbstractGameAction {
             if(x != null){
                 int evasion = (x.amount + amount) / EVASIVE_CAP;
                 int leftoverEvasion = (x.amount + amount) % EVASIVE_CAP;
-                doPow(p(), new EvasionPower(leftoverEvasion), true);
-                att(new ReducePowerAction(p(), p(), EvasionPower.POWER_ID, EVASIVE_CAP));
-                doPow(p(), new EvasivePower(evasion), true);
+                if(evasion > 0){
+                    doPow(p(), new EvasivePower(evasion), true);
+                    if(leftoverEvasion > 0){ doPow(p(), new EvasionPower(leftoverEvasion), true); }
+                    att(new ReducePowerAction(p(), p(), EvasionPower.POWER_ID, EVASIVE_CAP));
+                }
+                else { doPow(p(), new EvasionPower(amount), true); }
             }
             else {
                 while(amount >= EVASIVE_CAP){

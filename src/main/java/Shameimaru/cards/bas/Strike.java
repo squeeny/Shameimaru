@@ -29,9 +29,5 @@ public class Strike extends abs_aya_card {
         setDamage(DMG, UPG_DMG);
     }
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        doDmg(m, this.damage);
-        atb(new createPhotographAction(m));
-        atb(new dynamicGainEvasiveAction(113));
-    }
+    public void use(AbstractPlayer p, AbstractMonster m) { doDmg(m, this.damage); }
 }
