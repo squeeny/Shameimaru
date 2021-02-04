@@ -94,7 +94,7 @@ public class chr_aya extends CustomPlayer {
 
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(TodoItem.ID);
+        //retVal.add(.ID);
         //TODO: Change this too.
         return retVal;
     }

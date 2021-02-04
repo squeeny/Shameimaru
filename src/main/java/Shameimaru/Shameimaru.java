@@ -1,6 +1,7 @@
 package Shameimaru;
 
 import Shameimaru.chr.chr_aya;
+import Shameimaru.relics.AbstractAyaRelic;
 import Shameimaru.vars.aya_card_magic;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -99,18 +100,7 @@ public class Shameimaru implements
     }
     @Override
     public void receiveEditRelics() {
-        new AutoAdd(modID)
-                .packageFilter(AbstractEasyRelic.class)
-                .any(AbstractEasyRelic.class, (info, relic) -> {
-                    if (relic.color == null) {
-                        BaseMod.addRelic(relic, RelicType.SHARED);
-                    } else {
-                        BaseMod.addRelicToCustomPool(relic, relic.color);
-                    }
-                    if (!info.seen) {
-                        UnlockTracker.markRelicAsSeen(relic.relicId);
-                    }
-                });
+
     }
 
     @Override
@@ -121,7 +111,6 @@ public class Shameimaru implements
                 .setDefaultSeen(true)
                 .cards();
     }
-
 
     @Override
     public void receiveEditStrings() {
