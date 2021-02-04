@@ -58,5 +58,11 @@
       "Draw #b%1$s card next turn.",
       "Draw #b%1$s cards next turn."
     ]
+  },
+  "${ModID}:EvasiveFormPower": {
+    "NAME": "Evasive Form",
+    "DESCRIPTIONS": [
+      "When you draw a card, gain #b%1$s #yEvasion."
+    ]
   }
 }

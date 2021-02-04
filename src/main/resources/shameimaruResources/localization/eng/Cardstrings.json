@@ -311,5 +311,9 @@
   "${ModID}:DeadlineDay": {
     "NAME": "Deadline Day",
     "DESCRIPTION": "At the start of each turn, draw !${ModID}:M! cards. NL Gain !M! Vulnerable."
+  },
+  "${ModID}:EvasiveForm": {
+    "NAME": "Evasive Form",
+    "DESCRIPTION": "When you draw a card, gain !M! ${ModID}:Evasion."
   }
 }
