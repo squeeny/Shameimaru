@@ -286,5 +286,9 @@
   "${ModID}:EvasiveManeuver": {
     "NAME": "Evasive Maneuver",
     "DESCRIPTION": "Deal !D! damage. NL If ${ModID}:Evasive: NL Gain [E] NL Draw !M! cards."
+  },
+  "${ModID}:HitAndRun": {
+    "NAME": "Hit And Run",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Evasion."
   }
 }
