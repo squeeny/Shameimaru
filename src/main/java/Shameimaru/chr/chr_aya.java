@@ -3,6 +3,7 @@ package Shameimaru.chr;
 import Shameimaru.cards.bas.Defend;
 import Shameimaru.cards.bas.PlayfulTaunt;
 import Shameimaru.cards.bas.Strike;
+import Shameimaru.relics.starter.blackbirdfeather;
 import Shameimaru.util.BetterSpriterAnimation;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
@@ -94,8 +95,7 @@ public class chr_aya extends CustomPlayer {
 
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        //retVal.add(.ID);
-        //TODO: Change this too.
+        retVal.add(blackbirdfeather.ID);
         return retVal;
     }
 
