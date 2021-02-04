@@ -344,5 +344,9 @@
   "${ModID}:SpiralingTempest": {
     "NAME": "Spiraling Tempest",
     "DESCRIPTION": "Deal !D! damage. NL When discarded, deal !M! damage to ALL enemies."
+  },
+  "${ModID}:HighlightReel": {
+    "NAME": "Highlight Reel",
+    "DESCRIPTION": "Discard !${ModID}:M! card. NL Choose !M! cards in your draw pile. NL Play all of them."
   }
 }
