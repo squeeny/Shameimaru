@@ -19,7 +19,7 @@ public class Photoshoot extends abs_aya_card {
     );
     public static final String ID = makeID(cardInfo.cardName);
     private static final int BLOCK = 8;
-    private static final int UPG_BLOCK = 12;
+    private static final int UPG_BLOCK = 4;
     public Photoshoot() {
         super(cardInfo, true);
         setBlock(BLOCK, UPG_BLOCK);
