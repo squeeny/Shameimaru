@@ -31,7 +31,7 @@ public class Photocopier extends abs_aya_card {
     private static final int UPG_ACTIVATE_PER_COPIES = -1;
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("RewardItem");
     public Photocopier() {
-        super(cardInfo, true);
+        super(cardInfo, false);
         setMagic(DRAW);
         setAyaMagic(ACTIVATE_PER_COPIES, UPG_ACTIVATE_PER_COPIES);
         setExhaust(true);

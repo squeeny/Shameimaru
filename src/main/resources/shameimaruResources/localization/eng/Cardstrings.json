@@ -298,5 +298,10 @@
   "${ModID}:BlindingSpeed": {
     "NAME": "Blinding Speed",
     "DESCRIPTION": "Deal !D! damage. NL When you become ${ModID}:Evasive: NL This costs !M! this turn."
+  },
+  "${ModID}:AutumnalFallWind": {
+    "NAME": "Autumnal Fall Wind",
+    "DESCRIPTION": "When discarded, choose a card in your draw pile. NL Play the chosen card twice and exhaust it.",
+    "UPGRADE_DESCRIPTION": "When discarded, choose a card in your draw pile. NL Play the chosen card twice and exhaust it. NL Draw !M! cards."
   }
 }
