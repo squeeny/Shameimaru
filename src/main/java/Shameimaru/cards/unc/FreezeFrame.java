@@ -21,7 +21,7 @@ public class FreezeFrame extends abs_aya_card {
     private static final int DAMAGE = 10;
     private static final int UPG_DAMAGE = 4;
     public FreezeFrame() {
-        super(cardInfo, true);
+        super(cardInfo, false);
         setDamage(DAMAGE, UPG_DAMAGE);
     }
     @Override

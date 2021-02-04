@@ -29,7 +29,7 @@ public class MassDeletion extends abs_aya_card {
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
     public MassDeletion() {
-        super(cardInfo, true);
+        super(cardInfo, false);
         setDamage(DAMAGE, UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK);
     }

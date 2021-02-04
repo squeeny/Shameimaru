@@ -24,7 +24,7 @@ public class EvasiveManeuver extends abs_aya_card {
     private static final int ENERGY = 1;
     private static final int DRAW = 2;
     public EvasiveManeuver() {
-        super(cardInfo, true);
+        super(cardInfo, false);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(DRAW);
     }
