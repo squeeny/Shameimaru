@@ -1,6 +1,5 @@
 package Shameimaru.cards.com;
 
-import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -11,9 +10,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import static Shameimaru.Shameimaru.makeID;
 import static Shameimaru.util.actionShortcuts.*;
 
-public class TenguGaleBullet extends abs_aya_card {
+public class GaleBullet extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
-            TenguGaleBullet.class.getSimpleName(),
+            GaleBullet.class.getSimpleName(),
             COSTS[1],
             AbstractCard.CardType.ATTACK,
             CardTarget.ALL_ENEMY
@@ -21,7 +20,7 @@ public class TenguGaleBullet extends abs_aya_card {
     public static final String ID = makeID(cardInfo.cardName);
     private static final int DMG = 8;
     private static final int UPG_DMG = 3;
-    public TenguGaleBullet() {
+    public GaleBullet() {
         super(cardInfo, false);
         setDamage(DMG, UPG_DMG);
     }

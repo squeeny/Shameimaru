@@ -149,8 +149,8 @@
     "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Snapshot",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL ${ModID}:Snapshot+"
   },
-  "${ModID}:TenguGaleBullet": {
-    "NAME": "Tengu Gale Bullet",
+  "${ModID}:GaleBullet": {
+    "NAME": "Gale Bullet",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL When discarded, deal !D! damage to ALL enemies."
   },
   "${ModID}:Persuade": {
