@@ -47,5 +47,9 @@
       "Dodge all damage this turn.",
       "Dodge all damage for the next #b%1$s turns."
     ]
+  },
+  "${ModID}:TailwindPower": {
+    "NAME": "Tailwind",
+    "DESCRIPTIONS": ["Gain #b%1$s #yEvasion at the end of your turn."]
   }
 }
