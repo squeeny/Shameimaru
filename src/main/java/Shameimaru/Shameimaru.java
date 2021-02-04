@@ -18,7 +18,6 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import Shameimaru.relics.AbstractEasyRelic;
 
 import java.nio.charset.StandardCharsets;
 
@@ -82,36 +81,22 @@ public class Shameimaru implements
         return modID + "Resources/images/" + resourcePath;
     }
 
-    public static String makeRelicPath(String resourcePath) {
-        return modID + "Resources/images/relics/" + resourcePath;
-    }
-
-    public static String makePowerPath(String resourcePath) {
-        return modID + "Resources/images/powers/" + resourcePath;
-    }
-
+    public static String makeRelicPath(String resourcePath) { return modID + "Resources/images/relics/" + resourcePath; }
+    public static String makeOutlinePath(String resourcePath) { return modID + "Resources/images/relics/outline/" + resourcePath; }
+    public static String makePowerPath(String resourcePath) { return modID + "Resources/images/powers/" + resourcePath; }
     public static String makeCardPath(String resourcePath) {
         return modID + "Resources/images/cards/" + resourcePath;
     }
-
-    public static String makeCharacterPath(String resourcePath) {
-        return modID + "Resources/images/character/" + resourcePath;
-    }
-
-    public static String makeEffectPath(String resourcePath) {
-        return modID + "Resources/images/effects/" + resourcePath;
-    }
-
+    public static String makeCharacterPath(String resourcePath) { return modID + "Resources/images/character/" + resourcePath; }
+    public static String makeEffectPath(String resourcePath) { return modID + "Resources/images/effects/" + resourcePath; }
     public static void initialize() {
         Shameimaru shameimaru = new Shameimaru();
     }
-
     @Override
     public void receiveEditCharacters() {
         BaseMod.addCharacter(new chr_aya(characterStrings.NAMES[1], chr_aya.Enums.AYA),
                 CHARSELECT_BUTTON, CHARSELECT_PORTRAIT, chr_aya.Enums.AYA);
     }
-
     @Override
     public void receiveEditRelics() {
         new AutoAdd(modID)

@@ -3,6 +3,7 @@ package Shameimaru.util;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
+import static Shameimaru.Shameimaru.makeOutlinePath;
 import static Shameimaru.Shameimaru.makeRelicPath;
 
 public class RelicInfo {
@@ -15,6 +16,6 @@ public class RelicInfo {
         this.relicTier = relicTier;
         this.sfx = sfx;
     }
-    public Texture loadRelicImage(String name, String modID){ return TexLoader.getTexture(makeRelicPath(name + ".png")); }
-    public Texture loadOutlineImage(String name, String modID){ return TexLoader.getTexture(makeRelicPath(name + ".png")); }
+    public Texture loadRelicImage(String name){ return TexLoader.getTexture(makeRelicPath(name + ".png")); }
+    public Texture loadOutlineImage(String name){ return TexLoader.getTexture(makeOutlinePath(name + ".png")); }
 }
