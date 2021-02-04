@@ -2,6 +2,8 @@ package Shameimaru;
 
 import Shameimaru.chr.chr_aya;
 import Shameimaru.relics.AbstractAyaRelic;
+import Shameimaru.relics.starter.blackbirdfeather;
+import Shameimaru.relics.starter.blackbirdwings;
 import Shameimaru.vars.aya_card_magic;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -100,7 +102,8 @@ public class Shameimaru implements
     }
     @Override
     public void receiveEditRelics() {
-
+        BaseMod.addRelicToCustomPool(new blackbirdfeather(), chr_aya.Enums.AYA_COLOUR);
+        BaseMod.addRelicToCustomPool(new blackbirdwings(), chr_aya.Enums.AYA_COLOUR);
     }
 
     @Override

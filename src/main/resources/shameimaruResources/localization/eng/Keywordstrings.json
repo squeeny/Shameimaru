@@ -30,5 +30,21 @@
       "adaptive"
     ],
     "DESCRIPTION": "Choose an effect."
+  },
+
+  {
+    "PROPER_NAME": "Evasion",
+    "NAMES": [
+      "evasion"
+    ],
+    "DESCRIPTION": "Gained by various effects. NL When you gain #b25 #yEvasion, remove it all and become #yEvasive. NL (Dodge all damage for #b1 turn.)"
+  },
+
+  {
+    "PROPER_NAME": "Evasive",
+    "NAMES": [
+      "evasive"
+    ],
+    "DESCRIPTION": "Dodge all damage for #b1 turn."
   }
 ]

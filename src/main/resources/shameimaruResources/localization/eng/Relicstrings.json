@@ -5,5 +5,15 @@
     "DESCRIPTIONS": [
       "Has no effect."
     ]
+  },
+  "${ModID}:blackbirdfeather": {
+    "NAME": "Blackbird's Feather",
+    "FLAVOR": "",
+    "DESCRIPTIONS": ["Whenever you draw a card, gain #b1 ${ModID}:Evasion"]
+  },
+  "${ModID}:blackbirdwings": {
+    "NAME": "Blackbird's Wings",
+    "FLAVOR": "",
+    "DESCRIPTIONS": ["Whenever you draw or discard a card, gain #b1 ${ModID}:Evasion"]
   }
 }
