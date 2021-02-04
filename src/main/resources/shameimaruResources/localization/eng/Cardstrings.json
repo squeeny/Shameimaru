@@ -320,5 +320,9 @@
     "NAME": "Illusory Dominance",
     "DESCRIPTION": "Gain !M! ${ModID}:Evasion NL Gain !${ModID}:M! Strength.",
     "UPGRADE_DESCRIPTION": "Gain !M! ${ModID}:Evasion NL Gain !${ModID}:M! Strength. NL Exhaustive 2"
+  },
+  "${ModID}:FlutteringFeyFan": {
+    "NAME": "Fluttering Fey Fan",
+    "DESCRIPTION": "Costs 1 Less [E] for each card discarded this turn. NL Deal !D! damage !M! times."
   }
 }
