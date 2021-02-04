@@ -274,5 +274,9 @@
   "${ModID}:AirSlash": {
     "NAME": "Air Slash",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL If you discarded a card this turn, gain [E] [E] . NL If you didn't, gain [E] ."
+  },
+  "${ModID}:AdverseWind": {
+    "NAME": "Adverse Wind",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL If you discarded a card this turn, gain [E] [E] . NL If you didn't, gain [E] ."
   }
 }
