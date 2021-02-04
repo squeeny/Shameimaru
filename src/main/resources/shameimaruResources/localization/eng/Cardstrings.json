@@ -336,5 +336,9 @@
       " NL (Deals !D! damage !M! time)",
       " NL (Deals !D! damage !M! times)"
     ]
+  },
+  "${ModID}:GuidingBreeze": {
+    "NAME": "Guiding Breeze",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL  If you played a *Photograph this turn, NL Draw !M! card."
   }
 }

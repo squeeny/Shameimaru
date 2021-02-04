@@ -19,15 +19,13 @@ public class exclusiveScoopAction extends AbstractGameAction {
     }
 
     public void update() {
-        this.isDone = true;
         if (this.target != null && this.target.currentHealth > 0) {
             int count = 0;
             for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
                 if (c instanceof Photograph) { count++; }
             }
-            for (int i = 0; i < count; i += 1){
-                doDmg(target, amount, DamageInfo.DamageType.NORMAL, AttackEffect.NONE, Settings.FAST_MODE, true);
-            };
+            for (int i = 0; i < count; i += 1){ doDmg(target, amount, DamageInfo.DamageType.NORMAL, AttackEffect.NONE, Settings.FAST_MODE, true); }
         }
+        this.isDone = true;
     }
 }
