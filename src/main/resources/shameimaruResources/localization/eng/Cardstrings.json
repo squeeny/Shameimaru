@@ -294,5 +294,9 @@
   "${ModID}:DashingGrace": {
     "NAME": "Dashing Grace",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Evasion. NL When discarded, NL Gain !${ModID}:M! ${ModID}:Evasion."
+  },
+  "${ModID}:BlindingSpeed": {
+    "NAME": "Blinding Speed",
+    "DESCRIPTION": "Deal !D! damage. NL When you become ${ModID}:Evasive: NL This costs !M! this turn."
   }
 }

@@ -1,5 +1,6 @@
 package Shameimaru.actions.evasive;
 
+import Shameimaru.cards.com.BlindingSpeed;
 import Shameimaru.cards.sp.photograph.Photograph;
 import Shameimaru.powers.EvasionPower;
 import Shameimaru.powers.EvasivePower;
@@ -39,6 +40,9 @@ public class dynamicGainEvasiveAction extends AbstractGameAction {
                     doPow(p(), new EvasivePower(evasion), true);
                     if(leftoverEvasion > 0){ doPow(p(), new EvasionPower(leftoverEvasion), true); }
                     att(new ReducePowerAction(p(), p(), EvasionPower.POWER_ID, EVASIVE_CAP));
+                    for(AbstractCard c: p().hand.group){ if(c instanceof BlindingSpeed){ ((BlindingSpeed) c).onEvasive(); } }
+                    for(AbstractCard c: p().drawPile.group){ if(c instanceof BlindingSpeed){ ((BlindingSpeed) c).onEvasive(); } }
+                    for(AbstractCard c: p().discardPile.group){ if(c instanceof BlindingSpeed){ ((BlindingSpeed) c).onEvasive(); } }
                 }
                 else { doPow(p(), new EvasionPower(amount), true); }
             }
@@ -46,6 +50,9 @@ public class dynamicGainEvasiveAction extends AbstractGameAction {
                 while(amount >= EVASIVE_CAP){
                     amount -= EVASIVE_CAP;
                     doPow(p(), new EvasivePower(EVASIVE), true);
+                    for(AbstractCard c: p().hand.group){ if(c instanceof BlindingSpeed){ ((BlindingSpeed) c).onEvasive(); } }
+                    for(AbstractCard c: p().drawPile.group){ if(c instanceof BlindingSpeed){ ((BlindingSpeed) c).onEvasive(); } }
+                    for(AbstractCard c: p().discardPile.group){ if(c instanceof BlindingSpeed){ ((BlindingSpeed) c).onEvasive(); } }
                 }
                 if(amount > 0){ doPow(p(), new EvasionPower(amount), true); }
             }
