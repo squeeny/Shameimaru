@@ -1,5 +1,6 @@
 package Shameimaru.chr;
 
+import Shameimaru.Shameimaru;
 import Shameimaru.cards.bas.Defend;
 import Shameimaru.cards.bas.PlayfulTaunt;
 import Shameimaru.cards.bas.Strike;
@@ -145,7 +146,10 @@ public class chr_aya extends CustomPlayer {
 
     @Override
     public String getTitle(PlayerClass playerClass) {
-        return NAMES[1];
+        if (ayaConfig.getBool("Ayaya")) {
+            return NAMES[1];
+        }
+        return NAMES[0];
     }
 
     @Override

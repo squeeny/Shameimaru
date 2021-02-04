@@ -9,11 +9,11 @@
   "${ModID}:blackbirdfeather": {
     "NAME": "Blackbird's Feather",
     "FLAVOR": "",
-    "DESCRIPTIONS": ["Whenever you draw a card, gain #b1 ${ModID}:Evasion"]
+    "DESCRIPTIONS": ["Whenever you draw a card, gain #b1 #y${ModID}:Evasion"]
   },
   "${ModID}:blackbirdwings": {
     "NAME": "Blackbird's Wings",
     "FLAVOR": "",
-    "DESCRIPTIONS": ["Whenever you draw or discard a card, gain #b1 ${ModID}:Evasion"]
+    "DESCRIPTIONS": ["Whenever you draw or discard a card, gain #b1 #y${ModID}:Evasion"]
   }
 }
