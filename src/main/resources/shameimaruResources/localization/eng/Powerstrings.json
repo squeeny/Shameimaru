@@ -36,5 +36,16 @@
   "${ModID}:TelescopingPower": {
     "NAME": "Telescope",
     "DESCRIPTIONS": ["You may always see the top #b4 cards of your draw pile."]
+  },
+  "${ModID}:EvasionPower": {
+    "NAME": "Evasion",
+    "DESCRIPTIONS": ["When #b25 evasion is gained, become #yEvasive, and dodge all damage this turn."]
+  },
+  "${ModID}:EvasivePower": {
+    "NAME": "Evasive",
+    "DESCRIPTIONS": [
+      "Dodge all damage this turn.",
+      "Dodge all damage for the next #b%1$s turns."
+    ]
   }
 }
