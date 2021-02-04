@@ -29,7 +29,7 @@ public class EvasivePower extends AbstractPower {
     }
 
     @Override
-    public void updateDescription() { description = DESCRIPTIONS[0]; }
+    public void updateDescription() { description = amount == 1 ? DESCRIPTIONS[0] : String.format(DESCRIPTIONS[1], amount); }
 
     public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
         damage = 0f;
