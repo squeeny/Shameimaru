@@ -15,7 +15,7 @@ import static Shameimaru.util.actionShortcuts.doDmg;
 public class OutburstingGust extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             OutburstingGust.class.getSimpleName(),
-            COSTS[1],
+            COSTS[2],
             CardType.ATTACK,
             CardTarget.ENEMY
     );
