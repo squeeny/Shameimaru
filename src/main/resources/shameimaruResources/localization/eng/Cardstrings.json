@@ -303,5 +303,9 @@
     "NAME": "Autumnal Fall Wind",
     "DESCRIPTION": "When discarded, choose a card in your draw pile. NL Play the chosen card twice and exhaust it.",
     "UPGRADE_DESCRIPTION": "When discarded, choose a card in your draw pile. NL Play the chosen card twice and exhaust it. NL Draw !M! cards."
+  },
+  "${ModID}:OutburstingGust": {
+    "NAME": "Outbursting Gust",
+    "DESCRIPTION": "Deal !D! damage. NL If you discarded a card this turn, gain [E] [E] and draw !M! cards."
   }
 }
