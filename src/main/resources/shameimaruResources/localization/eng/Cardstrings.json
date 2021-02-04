@@ -266,5 +266,9 @@
     "EXTENDED_DESCRIPTION": [
       "Gain !M! Block."
     ]
+  },
+  "${ModID}:SplittingGale": {
+    "NAME": "Splitting Gale",
+    "DESCRIPTION": "Deal !D! damage twice. NL You may discard !${ModID}:M! card. NL If you don't, reduce this card's damage by !M! this combat."
   }
 }
