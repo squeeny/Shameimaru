@@ -290,5 +290,9 @@
   "${ModID}:HitAndRun": {
     "NAME": "Hit And Run",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Evasion."
+  },
+  "${ModID}:DashingGrace": {
+    "NAME": "Dashing Grace",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Evasion. NL When discarded, NL Gain !${ModID}:M! ${ModID}:Evasion."
   }
 }
