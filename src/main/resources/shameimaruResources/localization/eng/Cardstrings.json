@@ -340,5 +340,9 @@
   "${ModID}:GuidingBreeze": {
     "NAME": "Guiding Breeze",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL  If you played a *Photograph this turn, NL Draw !M! card."
+  },
+  "${ModID}:SpiralingTempest": {
+    "NAME": "Spiraling Tempest",
+    "DESCRIPTION": "Deal !D! damage. NL When discarded, deal !M! damage to ALL enemies."
   }
 }
