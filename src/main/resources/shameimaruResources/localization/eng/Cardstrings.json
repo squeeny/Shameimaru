@@ -282,5 +282,9 @@
   "${ModID}:Tailwind": {
     "NAME": "Tailwind",
     "DESCRIPTION": "Gain !M! ${ModID}:Evasion at the end of each turn."
+  },
+  "${ModID}:EvasiveManeuver": {
+    "NAME": "Evasive Maneuver",
+    "DESCRIPTION": "Deal !D! damage. NL If ${ModID}:Evasive: NL Gain [E] NL Draw !M! cards."
   }
 }

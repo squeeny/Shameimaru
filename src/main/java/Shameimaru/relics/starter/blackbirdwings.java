@@ -11,7 +11,7 @@ import static Shameimaru.util.actionShortcuts.p;
 
 public class blackbirdwings extends AbstractAyaRelic {
     private static final RelicInfo relicInfo = new RelicInfo(
-            blackbirdfeather.class.getSimpleName(),
+            blackbirdwings.class.getSimpleName(),
             RelicTier.BOSS,
             LandingSound.MAGICAL
     );
