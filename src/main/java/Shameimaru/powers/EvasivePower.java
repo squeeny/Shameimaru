@@ -31,10 +31,8 @@ public class EvasivePower extends AbstractPower {
     @Override
     public void updateDescription() { description = amount == 1 ? DESCRIPTIONS[0] : String.format(DESCRIPTIONS[1], amount); }
 
-    public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
-        damage = 0f;
-        return damage;
-    }
+    public int onAttacked(DamageInfo info, int damageAmount) { return 0; }
+    
     public void atEndOfRound() {
         flash();
         if (this.amount == 0) { atb(new RemoveSpecificPowerAction(this.owner, this.owner, this));
