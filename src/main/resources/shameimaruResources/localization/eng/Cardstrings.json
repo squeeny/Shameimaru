@@ -315,5 +315,10 @@
   "${ModID}:EvasiveForm": {
     "NAME": "Evasive Form",
     "DESCRIPTION": "When you draw a card, gain !M! ${ModID}:Evasion."
+  },
+  "${ModID}:IllusoryDominance": {
+    "NAME": "Illusory Dominance",
+    "DESCRIPTION": "Gain !M! ${ModID}:Evasion NL Gain !${ModID}:M! Strength.",
+    "UPGRADE_DESCRIPTION": "Gain !M! ${ModID}:Evasion NL Gain !${ModID}:M! Strength. NL Exhaustive 2"
   }
 }
