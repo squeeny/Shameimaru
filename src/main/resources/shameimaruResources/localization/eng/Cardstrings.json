@@ -270,5 +270,9 @@
   "${ModID}:SplittingGale": {
     "NAME": "Splitting Gale",
     "DESCRIPTION": "Deal !D! damage twice. NL You may discard !${ModID}:M! card. NL If you don't, reduce this card's damage by !M! this combat."
+  },
+  "${ModID}:AirSlash": {
+    "NAME": "Air Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL If you discarded a card this turn, gain [E] [E] . NL If you didn't, gain [E] ."
   }
 }

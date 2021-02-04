@@ -1,6 +1,6 @@
 package Shameimaru.cards.com;
 
-import Shameimaru.actions.photograph.createPhotographAction;
+import Shameimaru.actions.unique.airSlash.airSlashAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
@@ -11,29 +11,28 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import static Shameimaru.Shameimaru.makeID;
 import static Shameimaru.util.actionShortcuts.*;
 
-public class AirCutter extends abs_aya_card {
+public class AirSlash extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
-            AirCutter.class.getSimpleName(),
-            COSTS[1],
+            AirSlash.class.getSimpleName(),
+            COSTS[2],
             AbstractCard.CardType.ATTACK,
             AbstractCard.CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int DMG = 9;
-    private static final int UPG_DMG = 3;
-    private static final int DISCARD = 1;
+    private static final int DMG = 12;
+    private static final int UPG_DMG = 4;
     private static final int DRAW = 1;
-
-    public AirCutter() {
+    private static final int REFUND_GOOD = 2;
+    private static final int REFUND_BAD = 1;
+    public AirSlash() {
         super(cardInfo, false);
         setDamage(DMG, UPG_DMG);
         setMagic(DRAW);
-        setAyaMagic(DISCARD);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         doDmg(m, this.damage);
         doDraw(magicNumber);
-        atb(new DiscardAction(p, p, ayaSecondMagicNumber, false));
+        atb(new airSlashAction(REFUND_GOOD, REFUND_BAD));
     }
 }
