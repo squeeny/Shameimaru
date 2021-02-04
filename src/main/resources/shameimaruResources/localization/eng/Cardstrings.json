@@ -328,5 +328,13 @@
   "${ModID}:LibraryResearch": {
     "NAME": "Library Research",
     "DESCRIPTION": "At the start of your turn, draw !M! card and discard !M! card."
+  },
+  "${ModID}:ExclusiveScoop": {
+    "NAME": "Exclusive Scoop",
+    "DESCRIPTION": "Deal !D! damage for each *Photograph played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage !M! time)",
+      " NL (Deals !D! damage !M! times)"
+    ]
   }
 }
