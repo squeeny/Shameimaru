@@ -3,6 +3,7 @@ package Shameimaru.chr;
 import Shameimaru.Shameimaru;
 import Shameimaru.cards.bas.Defend;
 import Shameimaru.cards.bas.PlayfulTaunt;
+import Shameimaru.cards.bas.SnapshotStrike;
 import Shameimaru.cards.bas.Strike;
 import Shameimaru.relics.starter.blackbirdfeather;
 import Shameimaru.util.BetterSpriterAnimation;
@@ -86,10 +87,10 @@ public class chr_aya extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for (int i = 0; i < 5; i++) { retVal.add(Strike.ID); }
+        for (int i = 0; i < 4; i++) { retVal.add(Strike.ID); }
         for (int i = 0; i < 4; i++) { retVal.add(Defend.ID); }
         retVal.add(PlayfulTaunt.ID);
-
+        retVal.add(SnapshotStrike.ID);
         //TODO: Change this to your specifications.
         return retVal;
     }
