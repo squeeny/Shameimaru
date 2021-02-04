@@ -307,5 +307,9 @@
   "${ModID}:OutburstingGust": {
     "NAME": "Outbursting Gust",
     "DESCRIPTION": "Deal !D! damage. NL If you discarded a card this turn, gain [E] [E] and draw !M! cards."
+  },
+  "${ModID}:DeadlineDay": {
+    "NAME": "Deadline Day",
+    "DESCRIPTION": "At the start of each turn, draw !${ModID}:M! cards. NL Gain !M! Vulnerable."
   }
 }

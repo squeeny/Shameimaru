@@ -51,5 +51,12 @@
   "${ModID}:TailwindPower": {
     "NAME": "Tailwind",
     "DESCRIPTIONS": ["Gain #b%1$s #yEvasion at the end of your turn."]
+  },
+  "${ModID}:DeadlineDayPower": {
+    "NAME": "Deadline Day",
+    "DESCRIPTIONS": [
+      "Draw #b%1$s card next turn.",
+      "Draw #b%1$s cards next turn."
+    ]
   }
 }
