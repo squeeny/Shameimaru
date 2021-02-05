@@ -71,6 +71,14 @@
     "DESCRIPTION": "Deal !D! damage to a random enemy.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:tingshaOption": {
+    "NAME": "Opening Wind's Advent",
+    "DESCRIPTION": "Whenever you discard a card during your turn, deal !M! damage to a random enemy."
+  },
+  "${ModID}:bandagesOption": {
+    "NAME": "Opening Wind's Advent",
+    "DESCRIPTION": "Whenever you discard a card during your turn, gain !M! Block."
+  },
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
@@ -355,9 +363,10 @@
   },
   "${ModID}:PhotoAlbum": {
     "NAME": "Photo Album",
-    "DESCRIPTION": "Deal !D! damage !${ModID}:M! times. NL Deals !M! additional damage for each *Photograph played this turn.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Deals !D! damage !${ModID}:M! times)"
-    ]
+    "DESCRIPTION": "Deal !D! damage !${ModID}:M! times. NL Deals !M! additional damage for each *Photograph played this turn."
+  },
+  "${ModID}:OpeningWindAdvent": {
+    "NAME": "Opening Wind's Advent",
+    "DESCRIPTION": "${ModID}:Adaptive: NL Whenever you discard a card during your turn, deal !M! damage to a random enemy. NL Whenever you discard a card during your turn, gain !M! Block."
   }
 }

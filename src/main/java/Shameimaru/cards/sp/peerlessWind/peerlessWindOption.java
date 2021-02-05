@@ -40,5 +40,4 @@ public class peerlessWindOption extends abs_aya_card {
         if(optionChosen){ doDraw(magicNumber); }
         else { doPow(p(), new DrawCardNextTurnPower(p(), magicNumber)); }
     }
-
 }

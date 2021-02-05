@@ -64,5 +64,13 @@
     "DESCRIPTIONS": [
       "When you draw a card, gain #b%1$s #yEvasion."
     ]
+  },
+  "${ModID}:TingshaPower": {
+    "NAME": "Opening Wind's Advent",
+    "DESCRIPTIONS": ["Gain the relic #yTingsha until the end of combat."]
+  },
+  "${ModID}:BandagesPower": {
+    "NAME": "Opening Wind's Advent",
+    "DESCRIPTIONS": ["Gain the relic #yTough #yBandages until the end of combat."]
   }
 }
