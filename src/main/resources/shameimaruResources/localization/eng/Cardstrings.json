@@ -89,7 +89,7 @@
   },
   "${ModID}:PlayfulTaunt": {
     "NAME": "Playful Taunt",
-    "DESCRIPTION": "Gain !B! block. NL Force the enemy to attack if possible."
+    "DESCRIPTION": "Gain !B! Block. NL Force the enemy to attack if possible."
   },
   "${ModID}:PressRelease": {
     "NAME": "Press Release",
