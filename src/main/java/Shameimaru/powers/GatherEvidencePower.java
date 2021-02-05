@@ -35,7 +35,7 @@ public class GatherEvidencePower extends AbstractPower {
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
+        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0) {
             for (int i = 1; i <= amount; i += 1) { atb(new createPhotographAction((AbstractMonster) info.owner)); }
         }
         return damageAmount;

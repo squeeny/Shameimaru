@@ -15,7 +15,7 @@ public class blockCard extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             blockCard.class.getSimpleName(),
             COST_UNPLAYABLE,
-            CardType.ATTACK,
+            CardType.SKILL,
             CardTarget.ALL
     );
     public static final String ID = makeID(cardInfo.cardName);

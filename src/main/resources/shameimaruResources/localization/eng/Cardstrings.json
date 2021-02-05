@@ -406,5 +406,9 @@
   "${ModID}:GatherEvidence": {
     "NAME": "Gather Evidence",
     "DESCRIPTION": "Whenever you are attacked, ${ModID}:Snapshot the attacker."
+  },
+  "${ModID}:InvertedColours": {
+    "NAME": "Inverted Colours",
+    "DESCRIPTION": "Choose a Photograph in your hand. NL Gain Block equal to its damage. NL Deal damage to a random enemy equal to its Block."
   }
 }
