@@ -21,7 +21,7 @@ public class PlayfulTaunt extends abs_aya_card {
     );
     public static final String ID = makeID(cardInfo.cardName);
     private static final int BLOCK = 8;
-    private static final int UPG_BLOCK = 12;
+    private static final int UPG_BLOCK = 3;
     public PlayfulTaunt() {
         super(cardInfo, false);
         setBlock(BLOCK, UPG_BLOCK);
