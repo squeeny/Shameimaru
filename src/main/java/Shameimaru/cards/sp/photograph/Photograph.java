@@ -21,7 +21,7 @@ public class Photograph extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             Photograph.class.getSimpleName(),
             COST_UNPLAYABLE,
-            CardType.SKILL,
+            CardType.ATTACK,
             CardTarget.SELF_AND_ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
