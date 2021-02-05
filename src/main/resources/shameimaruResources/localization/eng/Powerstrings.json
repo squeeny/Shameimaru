@@ -79,5 +79,12 @@
       "Photographs deal double damage for #b%1$s turn.",
       "Photographs deal double damage for #b%1$s turns."
     ]
+  },
+  "${ModID}:GatherEvidencePower": {
+    "NAME": "Gather Evidence",
+    "DESCRIPTIONS": [
+      "Whenever you take damage, #ySnapshot the enemy #b%1$s time.",
+      "Whenever you take damage, #ySnapshot the enemy #b%1$s times."
+    ]
   }
 }

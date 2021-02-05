@@ -402,5 +402,9 @@
   "${ModID}:OverclockedCamera": {
     "NAME": "Overclocked Camera",
     "DESCRIPTION": "Gain [E] [E] . NL *Photographs deal double damage this turn. NL Lose [E] [E] . next turn."
+  },
+  "${ModID}:GatherEvidence": {
+    "NAME": "Gather Evidence",
+    "DESCRIPTION": "Whenever you are attacked, ${ModID}:Snapshot the attacker."
   }
 }
