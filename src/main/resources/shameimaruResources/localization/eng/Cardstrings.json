@@ -352,5 +352,12 @@
   "${ModID}:IntertwinedWinds": {
     "NAME": "Intertwined Winds",
     "DESCRIPTION": "Deal !D! damage. NL Shuffle this card into your draw pile. NL When discarded, put !M! card from your draw pile into your hand."
+  },
+  "${ModID}:PhotoAlbum": {
+    "NAME": "Photo Album",
+    "DESCRIPTION": "Deal !D! damage !${ModID}:M! times. NL Deals !M! additional damage for each *Photograph played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage !${ModID}:M! times)"
+    ]
   }
 }
