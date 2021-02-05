@@ -4,6 +4,7 @@ import Shameimaru.actions.ForceIntentAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.enums.IntentSwitcher;
 import Shameimaru.util.CardInfo;
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -12,7 +13,7 @@ import jdk.nashorn.internal.ir.annotations.Ignore;
 import static Shameimaru.Shameimaru.makeID;
 import static Shameimaru.util.actionShortcuts.*;
 
-@Ignore
+@AutoAdd.Ignore
 public class EmptyThreat extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             EmptyThreat.class.getSimpleName(),

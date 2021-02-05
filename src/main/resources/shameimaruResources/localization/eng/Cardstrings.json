@@ -375,5 +375,9 @@
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage !M! times. NL Deals damage an additional time for each card you discarded this turn."
     ]
+  },
+  "${ModID}:RapidEnhancement": {
+    "NAME": "Rapid Enhancement",
+    "DESCRIPTION": "Deal !D! damage. NL Upgrade all *Photographs in your hand."
   }
 }
