@@ -379,5 +379,10 @@
   "${ModID}:RapidEnhancement": {
     "NAME": "Rapid Enhancement",
     "DESCRIPTION": "Deal !D! damage. NL Upgrade all *Photographs in your hand."
+  },
+  "${ModID}:Plagiarism": {
+    "NAME": "Plagiarism",
+    "DESCRIPTION": "Choose any non-colourless card of cost X+1 or lower. NL Play that card.",
+    "UPGRADE_DESCRIPTION": "Choose any *Upgraded non-colourless card of cost X+1 or lower. NL Play that card."
   }
 }
