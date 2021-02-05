@@ -50,6 +50,7 @@ public class Photograph extends abs_aya_card {
         setRetain(true);
         setExhaust(true);
         this.tags.add(CardENUMs.PHOTOGRAPH);
+        newCopyInitDesc();
     }
     public Photograph() {
         super(cardInfo, false);
@@ -147,6 +148,22 @@ public class Photograph extends abs_aya_card {
             c.magicNumber *= 2;
             c.applyPowers();
         }
-
+    }
+    public void newCopyInitDesc(){
+        String desc = cardStrings.DESCRIPTION;
+        for(AbstractCard c: card){
+            String x;
+            if(c instanceof powerCard){
+                AbstractPower p = ReflectionHacks.getPrivate(c, powerCard.class, "power");
+                x = String.format(c.rawDescription, p.name);
+            }
+            else { x = c.rawDescription; }
+            if (x.contains("!D!")) { x = x.replaceAll("!D!", getDynamicValue(c, 'D')); }
+            if (x.contains("!B!")) { x = x.replaceAll("!B!", getDynamicValue(c, 'B')); }
+            if (x.contains("!M!")) { x = x.replaceAll("!M!", getDynamicValue(c, 'M')); }
+            desc += x;
+        }
+        rawDescription = desc;
+        initializeDescription();
     }
 }

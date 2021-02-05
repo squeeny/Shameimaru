@@ -26,7 +26,7 @@ public abstract class abs_aya_card_dm extends abs_aya_card {
                 } else {
                     cardsToPreview = cardToPreview.get(previewIndex);
                 }
-                if (previewIndex == cardToPreview.size() - 1) {
+                if (previewIndex >= cardToPreview.size() - 1) {
                     previewIndex = 0;
                 } else {
                     previewIndex++;
