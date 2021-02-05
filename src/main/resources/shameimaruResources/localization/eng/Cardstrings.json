@@ -348,5 +348,9 @@
   "${ModID}:HighlightReel": {
     "NAME": "Highlight Reel",
     "DESCRIPTION": "Discard !${ModID}:M! card. NL Choose !M! cards in your draw pile. NL Play all of them."
+  },
+  "${ModID}:IntertwinedWinds": {
+    "NAME": "Intertwined Winds",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle this card into your draw pile. NL When discarded, put !M! card from your draw pile into your hand."
   }
 }
