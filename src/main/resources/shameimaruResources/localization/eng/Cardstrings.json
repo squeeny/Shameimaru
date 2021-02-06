@@ -136,7 +136,8 @@
   },
   "${ModID}:LoadedStatement": {
     "NAME": "Loaded Statement",
-    "DESCRIPTION": "${ModID}:Adaptive: NL *Distraught. NL *Enrage."
+    "DESCRIPTION": "${ModID}:Adaptive: NL *Distraught. NL *Enrage.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Adaptive: NL *Distraught+ NL *Enrage+."
   },
   "${ModID}:Photocopier": {
     "NAME": "Photocopier",
@@ -211,7 +212,8 @@
   },
   "${ModID}:CoerciveReport": {
     "NAME": "Coercive Report",
-    "DESCRIPTION": "${ModID}:Adaptive: NL *Flattering *Report* NL *Controversial *Report"
+    "DESCRIPTION": "${ModID}:Adaptive: NL *Flattering *Report NL *Controversial *Report",
+    "UPGRADE_DESCRIPTION": "${ModID}:Adaptive: NL *Flattering *Report+ NL *Controversial *Report+"
   },
   "${ModID}:GroupPhoto": {
     "NAME": "GroupPhoto",

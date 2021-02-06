@@ -32,7 +32,7 @@ public class LoadedStatement extends abs_aya_card_dm {
     private static final int ENRAGE = 2;
     private static final int UPG_ENRAGE = 1;
     public LoadedStatement() {
-        super(cardInfo, false);
+        super(cardInfo, true);
         setMagic(WEAK, UPG_WEAK);
         setAyaMagic(ENRAGE, UPG_ENRAGE);
         this.cardToPreview = createDummyCardListForPreview();
@@ -75,5 +75,9 @@ public class LoadedStatement extends abs_aya_card_dm {
             }
         }
         return optionCards;
+    }
+    public void update(){
+        super.update();
+        this.cardToPreview = createDummyCardListForPreview();
     }
 }

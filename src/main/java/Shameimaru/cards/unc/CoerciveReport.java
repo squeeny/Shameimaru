@@ -26,7 +26,7 @@ public class CoerciveReport extends abs_aya_card_dm {
     );
     public static final String ID = makeID(cardInfo.cardName);
     public CoerciveReport() {
-        super(cardInfo, false);
+        super(cardInfo, true);
         this.cardToPreview = createDummyCardListForPreview();
     }
     @Override
@@ -39,9 +39,7 @@ public class CoerciveReport extends abs_aya_card_dm {
         c = new FlatteringReport();
         optionCards.add(c);
         for(AbstractCard cc: optionCards){
-            if(this.upgraded){
-                cc.upgrade();
-            }
+            if(this.upgraded){ cc.upgrade(); }
         }
         atb(new ChooseOneAction(optionCards));
     }
@@ -52,10 +50,12 @@ public class CoerciveReport extends abs_aya_card_dm {
         c = new FlatteringReport();
         optionCards.add(c);
         for(AbstractCard cc: optionCards){
-            if(this.upgraded){
-                cc.upgrade();
-            }
+            if(this.upgraded){ cc.upgrade(); }
         }
         return optionCards;
+    }
+    public void upgrade(){
+        super.upgrade();
+        this.cardToPreview = createDummyCardListForPreview();
     }
 }
