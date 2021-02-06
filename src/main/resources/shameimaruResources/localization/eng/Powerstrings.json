@@ -86,5 +86,13 @@
       "Whenever you take damage, #ySnapshot the enemy #b%1$s time.",
       "Whenever you take damage, #ySnapshot the enemy #b%1$s times."
     ]
+  },
+  "${ModID}:PolaroidPower": {
+    "NAME": "The Polaroid",
+    "DESCRIPTIONS": ["Whenever you are attacked and aren't #yEvasive, gain #b%1$s #yEvasion."]
+  },
+  "${ModID}:NegativePower": {
+    "NAME": "Opening Wind's Advent",
+    "DESCRIPTIONS": ["Whenever you take damage, deal #b%1$s damage to ALL enemies."]
   }
 }

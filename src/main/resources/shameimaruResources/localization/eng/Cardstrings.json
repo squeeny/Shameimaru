@@ -79,6 +79,15 @@
     "NAME": "Opening Wind's Advent",
     "DESCRIPTION": "Whenever you discard a card during your turn, gain !M! Block."
   },
+  "${ModID}:thePolaroid": {
+    "NAME": "The Polaroid",
+    "DESCRIPTION": "Whenever you are attacked and aren't ${ModID}:Evasive, gain !M! ${ModID}:Evasion.",
+    "UPGRADE_DESCRIPTION": "Whenever you are attacked and aren't ${ModID}:Evasive, gain !M! ${ModID}:Evasion. NL Gain [E] ."
+  },
+  "${ModID}:theNegative": {
+    "NAME": "The Negative",
+    "DESCRIPTION": "Whenever you take damage, deal !M! damage to ALL enemies. NL Gain [E] ."
+  },
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
@@ -412,5 +421,10 @@
   "${ModID}:InvertedColours": {
     "NAME": "Inverted Colours",
     "DESCRIPTION": "Choose a Photograph in your hand. NL Gain Block equal to its damage. NL Deal damage to a random enemy equal to its Block."
+  },
+  "${ModID}:Duality": {
+    "NAME": "Duality",
+    "DESCRIPTION": "${ModID}:Adaptive: NL *The *Polaroid. NL *The *Negative.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Adaptive: NL *The *Polaroid+. NL *The *Negative+."
   }
 }
