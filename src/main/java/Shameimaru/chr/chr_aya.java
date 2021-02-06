@@ -141,7 +141,7 @@ public class chr_aya extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return null;
+        return new SnapshotStrike();
         //TODO: Change this to your character's special starting card.
     }
 
