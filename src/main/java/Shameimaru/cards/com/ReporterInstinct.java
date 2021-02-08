@@ -29,7 +29,7 @@ public class ReporterInstinct extends abs_aya_card {
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (isAttackIntent(m.intent)) { doDmg(m, this.damage); }
-        else { doDef(this.block); }
+        if (isAttackIntent(m.intent)) { doDef(block); }
+        else { doDmg(m, this.damage); }
     }
 }
