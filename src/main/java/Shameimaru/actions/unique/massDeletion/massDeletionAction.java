@@ -1,6 +1,7 @@
 package Shameimaru.actions.unique.massDeletion;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -43,6 +44,8 @@ public class massDeletionAction extends AbstractGameAction {
                         doDef(block, true);
                         AbstractCard card = tmp.getNCardFromTop(i);
                         p().drawPile.moveToDiscardPile(card);
+                        card.triggerOnManualDiscard();
+                        GameActionManager.incrementDiscard(false);
                     }
                 }
                 else {
@@ -51,6 +54,8 @@ public class massDeletionAction extends AbstractGameAction {
                         doDmg(target, damage, DamageInfo.DamageType.NORMAL, AttackEffect.NONE, true);
                         AbstractCard card = tmp.getNCardFromTop(i);
                         p().drawPile.moveToDiscardPile(card);
+                        card.triggerOnManualDiscard();
+                        GameActionManager.incrementDiscard(false);
                     }
                 }
             }
