@@ -194,8 +194,7 @@
   },
   "${ModID}:GaleBlade": {
     "NAME": "Gale Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [E] .",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain [E] [E] ."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "${ModID}:FranticSearch": {
     "NAME": "Frantic Search",

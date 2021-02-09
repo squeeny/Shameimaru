@@ -19,18 +19,13 @@ public class GaleBlade extends abs_aya_card {
             CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 14;
     private static final int UPG_DAMAGE = 4;
-    private static final int ENERGY = 1;
-    private static final int UPG_ENERGY = 1;
     public GaleBlade() {
-        super(cardInfo, true);
+        super(cardInfo, false);
         setDamage(DAMAGE, UPG_DAMAGE);
-        setMagic(ENERGY, UPG_ENERGY);
+        setExhaust(true);
     }
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        doDmg(m, damage);
-        atb(new GainEnergyAction(magicNumber));
-    }
+    public void use(AbstractPlayer p, AbstractMonster m) { doDmg(m, damage); }
 }
