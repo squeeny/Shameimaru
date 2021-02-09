@@ -1,7 +1,6 @@
 package Shameimaru.powers;
 
 import Shameimaru.actions.photograph.createPhotographAction;
-import Shameimaru.cards.sp.photograph.core.attackCard;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;

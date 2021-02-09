@@ -3,8 +3,7 @@ package Shameimaru.cards.rar;
 import Shameimaru.actions.unique.bunbunmaruNewspaper.bunbunmaruNewspaperAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.cards.abs.abs_aya_card_dm;
-import Shameimaru.cards.sp.photograph.core.drawCard;
-import Shameimaru.cards.sp.photograph.core.powerCard;
+
 import Shameimaru.powers.DeadlineDayPower;
 import Shameimaru.util.CardInfo;
 import basemod.ReflectionHacks;

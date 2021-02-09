@@ -1,16 +1,12 @@
 package Shameimaru.powers;
 
 import Shameimaru.cards.sp.photograph.Photograph;
-import Shameimaru.cards.sp.photograph.core.attackCard;
-import basemod.ReflectionHacks;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static Shameimaru.Shameimaru.makeID;
@@ -44,7 +40,7 @@ public class OverclockedCameraPower extends AbstractPower {
 
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type, AbstractCard c) {
-        if (c instanceof attackCard) { damage = damage * 2f; }
+        if (c instanceof Photograph) { damage = damage * 2f; }
         return damage;
     }
 

@@ -1,6 +1,5 @@
 package Shameimaru.cards.com;
 
-import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.actions.unique.guidingBreeze.guidingBreezeAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.cards.sp.photograph.Photograph;

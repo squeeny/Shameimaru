@@ -4,7 +4,6 @@ import Shameimaru.cards.sp.photograph.Photograph;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Shameimaru.util.actionShortcuts.*;
 

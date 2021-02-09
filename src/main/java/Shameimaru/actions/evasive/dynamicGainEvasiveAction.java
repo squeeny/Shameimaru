@@ -1,19 +1,13 @@
 package Shameimaru.actions.evasive;
 
 import Shameimaru.cards.com.BlindingSpeed;
-import Shameimaru.cards.sp.photograph.Photograph;
 import Shameimaru.powers.EvasionPower;
 import Shameimaru.powers.EvasivePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-
-import java.util.ArrayList;
 
 import static Shameimaru.util.actionShortcuts.*;
 

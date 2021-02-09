@@ -3,7 +3,6 @@ package Shameimaru.cards.rar;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.cards.sp.photograph.Photograph;
 import Shameimaru.util.CardInfo;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;

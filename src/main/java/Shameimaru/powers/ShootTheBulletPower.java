@@ -1,8 +1,7 @@
 package Shameimaru.powers;
 
-import Shameimaru.actions.unique.shootTheBullet.shootTheBulletStoreSnapshotAction;
+import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.cards.sp.photograph.Photograph;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -34,14 +33,13 @@ public class ShootTheBulletPower extends AbstractPower {
         type = PowerType.BUFF;
         isTurnBased = false;
         loadRegion("flameBarrier");
-        atb(new shootTheBulletStoreSnapshotAction(source, this, snapShotPlus));
+        atb(new createPhotographAction(source, snapShotPlus, this));
         updateDescription();
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0) {
             flash();
-            System.out.println("huh");
             amount = -1;
         }
         return damageAmount;

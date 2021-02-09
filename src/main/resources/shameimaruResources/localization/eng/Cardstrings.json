@@ -1,35 +1,18 @@
 {
 
-  "${ModID}:attackCard": {
-    "NAME": "Unused",
-    "DESCRIPTION": "Deal !D! damage. NL ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL ",
-    "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage to ALL enemies. NL ",
-      "Deal !D! damage to ALL enemies !M! times. NL "
-    ]
-  },
-
-  "${ModID}:blockCard": {
-    "NAME": "Unused",
-    "DESCRIPTION": "Gain !B! Block. NL "
-  },
-
-  "${ModID}:powerCard": {
-    "NAME": "Unused",
-    "DESCRIPTION": "Apply !M! *%1$s NL ",
-    "UPGRADE_DESCRIPTION": "Gain !M! *%1$s NL "
-  },
-
-  "${ModID}:drawCard": {
-    "NAME": "Unused",
-    "DESCRIPTION": "Draw !M! card. NL ",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL "
-  },
-
   "${ModID}:Photograph": {
     "NAME": "Photograph",
-    "DESCRIPTION": ""
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage. NL ",
+      "Deal !D! damage !M! times. NL ",
+      "Deal !D! damage to ALL enemies. NL ",
+      "Deal !D! damage to ALL enemies !M! times. NL ",
+      "Gain !B! Block. NL ",
+      "Gain !B! Block !${ModID}:M! times. NL ",
+      "Draw !M! card. NL ",
+      "Draw !M! cards. NL "
+    ]
   },
 
   "${ModID}:foresightAttack": {

@@ -3,7 +3,6 @@ package Shameimaru.actions.unique.invertedColours;
 import Shameimaru.cards.sp.photograph.Photograph;
 import basemod.ReflectionHacks;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -29,9 +28,7 @@ public class invertedColoursAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-            for(AbstractCard c: p().hand.group) {
-                if (c instanceof Photograph) { tmp.addToTop(c); }
-            }
+            for(AbstractCard c: p().hand.group) { if (c instanceof Photograph) { tmp.addToTop(c); } }
             if (tmp.size() < amount) {
                 this.isDone = true;
                 return;
@@ -43,13 +40,14 @@ public class invertedColoursAction extends AbstractGameAction {
         else if (AbstractDungeon.gridSelectScreen.selectedCards.size() != 0) {
             for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
                 if(card instanceof Photograph){
-                    ArrayList<AbstractCard> dummies = ReflectionHacks.getPrivate(card, Photograph.class, "card");
-                    for(AbstractCard c: dummies){
-                        if(c.baseBlock >= 0){
-                            AbstractMonster m = getRandomAliveMonster(AbstractDungeon.getMonsters(), AbstractDungeon.cardRng);
-                            doDmg(m, c.block, DamageInfo.DamageType.NORMAL, AttackEffect.NONE, true);
-                        }
-                        if(c.baseDamage >= 0){ doDef(c.damage * c.magicNumber, true); }
+                    if(card.baseBlock >= 0){
+                        AbstractMonster m = getRandomAliveMonster(AbstractDungeon.getMonsters(), AbstractDungeon.cardRng);
+                        card.applyPowers();
+                        doDmg(m, card.block, DamageInfo.DamageType.NORMAL, AttackEffect.NONE, true);
+                    }
+                    if(card.baseDamage >= 0){
+                        card.applyPowers();
+                        doDef(card.damage * card.magicNumber, true);
                     }
                 }
             }
