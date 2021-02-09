@@ -1,6 +1,7 @@
 package Shameimaru.cards.unc;
 
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.powers.QuickReportingPower;
 import Shameimaru.powers.WidespreadPropagandaPower;
 import Shameimaru.util.CardInfo;
@@ -22,6 +23,7 @@ public class QuickReporting extends abs_aya_card {
     public QuickReporting() {
         super(cardInfo, false);
         setInnate(false, true);
+        tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { doPow(p(), new QuickReportingPower()); }

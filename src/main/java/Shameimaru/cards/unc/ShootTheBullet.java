@@ -2,6 +2,7 @@ package Shameimaru.cards.unc;
 
 import Shameimaru.actions.unique.galeforce.GaleforceAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.powers.ShootTheBulletPower;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -23,6 +24,7 @@ public class ShootTheBullet extends abs_aya_card {
     public ShootTheBullet() {
         super(cardInfo, true);
         setRetain(false, true);
+        tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { doPow(p, new ShootTheBulletPower(p, m, this.upgraded)); }

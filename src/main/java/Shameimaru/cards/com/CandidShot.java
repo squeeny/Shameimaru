@@ -2,6 +2,7 @@ package Shameimaru.cards.com;
 
 import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -24,6 +25,7 @@ public class CandidShot extends abs_aya_card {
     public CandidShot() {
         super(cardInfo, true);
         setDamage(DMG, UPG_DMG);
+        tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

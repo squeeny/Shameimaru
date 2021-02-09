@@ -3,6 +3,7 @@ package Shameimaru.cards.unc;
 import Shameimaru.actions.photograph.multiCreatePhotographAction;
 import Shameimaru.actions.unique.galeforce.GaleforceAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -25,6 +26,7 @@ public class GroupPhoto extends abs_aya_card {
     public GroupPhoto() {
         super(cardInfo, true);
         setBlock(BLOCK, UPG_BLOCK);
+        tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

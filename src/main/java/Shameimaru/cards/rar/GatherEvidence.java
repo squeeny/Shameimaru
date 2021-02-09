@@ -1,6 +1,7 @@
 package Shameimaru.cards.rar;
 
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.powers.GatherEvidencePower;
 import Shameimaru.powers.OverclockedCameraPower;
 import Shameimaru.util.CardInfo;
@@ -25,6 +26,7 @@ public class GatherEvidence extends abs_aya_card {
     public GatherEvidence() {
         super(cardInfo, false);
         setInnate(false, true);
+        tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { doPow(p, new GatherEvidencePower()); }

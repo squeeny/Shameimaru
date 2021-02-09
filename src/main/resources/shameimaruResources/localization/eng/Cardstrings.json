@@ -237,8 +237,7 @@
   },
   "${ModID}:InstantShotJournalist": {
     "NAME": "Instant Shot Journalist",
-    "DESCRIPTION": "When drawn, ${ModID}:Snapshot ALL enemies. NL Draw !M! cards. NL Exhaust this card.",
-    "UPGRADE_DESCRIPTION": "When drawn, ${ModID}:Snapshot+ ALL enemies. NL Draw !M! cards. NL Exhaust this card."
+    "DESCRIPTION": "Discard cards from your draw pile until you hit a card with ${ModID}:Snapshot. NL Play that card."
   },
   "${ModID}:SkywardSonnet": {
     "NAME": "Skyward Sonnet",

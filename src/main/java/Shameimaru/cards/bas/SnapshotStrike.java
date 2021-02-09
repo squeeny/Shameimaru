@@ -2,6 +2,7 @@ package Shameimaru.cards.bas;
 
 import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -26,6 +27,7 @@ public class SnapshotStrike extends abs_aya_card {
         super(cardInfo, false);
         setDamage(DMG, UPG_DMG);
         this.tags.remove(CardTags.STARTER_STRIKE);
+        tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

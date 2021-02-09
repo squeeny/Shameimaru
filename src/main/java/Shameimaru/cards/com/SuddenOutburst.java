@@ -2,6 +2,7 @@ package Shameimaru.cards.com;
 
 import Shameimaru.actions.photograph.createPhotographAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.enums.CardENUMs;
 import Shameimaru.util.CardInfo;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -22,11 +23,10 @@ public class SuddenOutburst extends abs_aya_card {
     public static final String ID = makeID(cardInfo.cardName);
     private static final int DMG = 8;
     private static final int UPG_DMG = 2;
-    private static final int ATTACKS = 1;
     public SuddenOutburst() {
         super(cardInfo, true);
         setDamage(DMG, UPG_DMG);
-        setMagic(ATTACKS);
+        tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
