@@ -137,8 +137,8 @@
   },
   "${ModID}:Imitation": {
     "NAME": "Imitation",
-    "DESCRIPTION": "Draw !M! card. NL ${ModID}:Snapshot",
-    "UPGRADE_DESCRIPTION": "Draw !M! card. NL ${ModID}:Snapshot+"
+    "DESCRIPTION": "${ModID}:Snapshot",
+    "UPGRADE_DESCRIPTION": "${ModID}:Snapshot+"
   },
   "${ModID}:Photoshoot": {
     "NAME": "Photoshoot",

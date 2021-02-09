@@ -19,17 +19,11 @@ public class Imitation extends abs_aya_card {
             AbstractCard.CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int DRAW = 1;
-    private static final int PHOTO_AMOUNT = 1;
     public Imitation() {
         super(cardInfo, true);
-        setMagic(DRAW);
         setRetain(true);
         tags.add(CardENUMs.SNAPSHOT);
     }
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        doDraw(magicNumber);
-        atb(new createPhotographAction(m, this.upgraded));
-    }
+    public void use(AbstractPlayer p, AbstractMonster m) { atb(new createPhotographAction(m, this.upgraded)); }
 }
