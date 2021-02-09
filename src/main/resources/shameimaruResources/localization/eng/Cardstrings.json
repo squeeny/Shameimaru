@@ -374,8 +374,8 @@
   },
   "${ModID}:Plagiarism": {
     "NAME": "Plagiarism",
-    "DESCRIPTION": "Choose any non-colourless card of cost X+1 or lower. NL Play that card.",
-    "UPGRADE_DESCRIPTION": "Choose any *Upgraded non-colourless card of cost X+1 or lower. NL Play that card."
+    "DESCRIPTION": "Choose any non-colourless card of cost X or lower. NL Play that card.",
+    "UPGRADE_DESCRIPTION": "Choose any *Upgraded non-colourless card of cost X or lower. NL Play that card."
   },
   "${ModID}:ClangingWindchime": {
     "NAME": "Clanging Windchime",

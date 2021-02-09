@@ -37,7 +37,6 @@ public class plagiarismAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
             int effect = EnergyPanel.totalCount;
-            effect += 1;
             if (p().hasRelic(ChemicalX.ID)) {
                 effect += ChemicalX.BOOST;
                 p().getRelic(ChemicalX.ID).flash();
