@@ -101,8 +101,8 @@
   },
   "${ModID}:DoctoredImage": {
     "NAME": "Doctored Image",
-    "DESCRIPTION": "Gain !B! Block. NL Upgrade a *Photograph in your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Upgrade a *Photograph in your hand twice."
+    "DESCRIPTION": "Gain !B! Block. NL Upgrade !M! *Photograph in your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Upgrade !M! *Photographs in your hand."
   },
   "${ModID}:PhotographicDisposal": {
     "NAME": "Photographic Disposal",

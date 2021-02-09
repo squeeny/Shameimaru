@@ -20,7 +20,7 @@ public class DoctoredImage extends abs_aya_card {
     );
     public static final String ID = makeID(cardInfo.cardName);
     private static final int BLOCK = 5;
-    private static final int UPG_BLOCK = 4;
+    private static final int UPG_BLOCK = 2;
     private static final int UPGRADE_AMOUNT = 1;
     private static final int UPG_UPGRADE_AMOUNT = 1;
 
@@ -32,6 +32,6 @@ public class DoctoredImage extends abs_aya_card {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         doDef(this.block);
-        atb(new upgradePhotographAction(1, magicNumber));
+        atb(new upgradePhotographAction(magicNumber));
     }
 }
