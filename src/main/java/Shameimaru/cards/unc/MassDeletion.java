@@ -24,9 +24,9 @@ public class MassDeletion extends abs_aya_card {
             CardTarget.ALL_ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int BLOCK = 1;
+    private static final int BLOCK = 3;
     private static final int UPG_BLOCK = 1;
-    private static final int DAMAGE = 1;
+    private static final int DAMAGE = 2;
     private static final int UPG_DAMAGE = 1;
     public MassDeletion() {
         super(cardInfo, false);
