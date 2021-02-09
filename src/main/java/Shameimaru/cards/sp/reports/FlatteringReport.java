@@ -35,8 +35,8 @@ public class FlatteringReport extends abs_aya_card {
     @Override
     public void onChoseThisOption(){
         for(AbstractMonster m: getAliveMonsters()){
-            doPow(m, new StrengthPower(m, magicNumber));
-            if (!m.hasPower(ArtifactPower.POWER_ID)) { doPow(m, new GainStrengthPower(m, -magicNumber)); }
+            doPow(m, new StrengthPower(m, -magicNumber));
+            if (!m.hasPower(ArtifactPower.POWER_ID)) { doPow(m, new GainStrengthPower(m, magicNumber)); }
         }
     }
 }
