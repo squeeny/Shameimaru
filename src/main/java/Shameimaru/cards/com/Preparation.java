@@ -31,7 +31,6 @@ public class Preparation extends abs_aya_card {
         super(cardInfo, true);
         setMagic(DRAW);
         setAyaMagic(DISCARD);
-        setRetain(true);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
