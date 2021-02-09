@@ -12,6 +12,7 @@ import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
+import com.brashmonkey.spriter.Player;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -66,6 +67,8 @@ public class chr_aya extends CustomPlayer {
     public chr_aya(String name, PlayerClass setClass) {
         super(name, setClass, new CustomEnergyOrb(orbTextures, getModID() + "Resources/images/char/mainChar/orb/vfx.png", null), new BetterSpriterAnimation(
                 getModID() + "Resources/images/char/mainChar/AyaAnimation.scml"));
+        Player.PlayerListener listener = new chr_aya_listener(this);
+        ((BetterSpriterAnimation)this.animation).myPlayer.addListener((listener));
         initializeClass(null,
                 SHOULDER1,
                 SHOULDER2,
