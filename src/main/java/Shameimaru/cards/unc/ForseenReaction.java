@@ -20,7 +20,7 @@ public class ForseenReaction extends abs_aya_card {
     public static final String ID = makeID(cardInfo.cardName);
     private int BLOCK = 0;
     public ForseenReaction() {
-        super(cardInfo, false);
+        super(cardInfo, true);
         setMagic(BLOCK);
         setExhaust(true);
     }
