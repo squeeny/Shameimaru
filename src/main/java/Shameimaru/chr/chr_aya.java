@@ -116,7 +116,7 @@ public class chr_aya extends CustomPlayer {
 
     @Override
     public int getAscensionMaxHPLoss() {
-        return 8;
+        return -8;
     }
 
     @Override
