@@ -19,14 +19,13 @@ public class PhotographicDisposal extends abs_aya_card {
             AbstractCard.CardTarget.SELF
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int DRAW = 7;
-    private static final int UPG_DRAW = 1;
+    private static final int DRAW = 5;
+    private static final int UPG_DRAW = 2;
     private static final int STR = 1;
-    private static final int UPG_STR = 1;
     public PhotographicDisposal() {
         super(cardInfo, false);
         setMagic(DRAW, UPG_DRAW);
-        setAyaMagic(STR, UPG_STR);
+        setAyaMagic(STR);
         setExhaust(true);
     }
     @Override
