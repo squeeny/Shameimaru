@@ -71,7 +71,6 @@ public class Photograph extends abs_aya_card {
                 break;
             case DRAW:
                 doDraw(magicNumber);
-                target = CardTarget.SELF;
                 break;
         }
 
@@ -97,12 +96,18 @@ public class Photograph extends abs_aya_card {
             case ATTACK:
                 if(p().hasPower(WidespreadPropagandaPower.POWER_ID)){ desc += magicNumber >= 2 ? cardStrings.EXTENDED_DESCRIPTION[3] : cardStrings.EXTENDED_DESCRIPTION[2]; }
                 else { desc += magicNumber >= 2 ? cardStrings.EXTENDED_DESCRIPTION[1] : cardStrings.EXTENDED_DESCRIPTION[0]; }
+                target = CardTarget.ENEMY;
                 if(currentMode.equals(PhotoModes.ATTACK)){ break; }
             case BLOCK:
                 desc += ayaSecondMagicNumber >= 2 ? cardStrings.EXTENDED_DESCRIPTION[5] : cardStrings.EXTENDED_DESCRIPTION[4];
+                if(currentMode.equals(PhotoModes.BLOCK)){
+                    target = CardTarget.SELF;
+                    break;
+                }
                 break;
             case DRAW:
                 desc += magicNumber >= 2 ? cardStrings.EXTENDED_DESCRIPTION[7] : cardStrings.EXTENDED_DESCRIPTION[6];
+                target = CardTarget.SELF;
                 break;
         }
         rawDescription = desc;
