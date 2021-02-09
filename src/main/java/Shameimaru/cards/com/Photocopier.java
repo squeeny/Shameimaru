@@ -39,7 +39,7 @@ public class Photocopier extends abs_aya_card {
     public void use(AbstractPlayer p, AbstractMonster m) {
         CardGroup eligible = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for(AbstractCard c: p.masterDeck.group){
-            if(!(c instanceof Photocopier)){ eligible.addToBottom(c); }
+            if(!(c instanceof Photocopier) && c.rarity == CardRarity.COMMON){ eligible.addToBottom(c); }
         }
         atb(new SelectCardsAction(eligible.group, AMOUNT, uiStrings.TEXT[2], (cards) -> {
             AbstractCard c = cards.get(0);
