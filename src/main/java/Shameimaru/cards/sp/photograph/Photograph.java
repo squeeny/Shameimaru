@@ -29,7 +29,9 @@ public class Photograph extends abs_aya_card {
     public static final String ID = makeID(cardInfo.cardName);
     private PhotoModes currentMode;
     private static final int UPG_AMOUNTS = 4;
-    private static final int EMERGENCY_DRAW = 1;
+    private static final int EMERGENCY_DRAW = 2;
+    private static final int UPG_EMERGENCY_DRAW = 1;
+
     public Photograph(PhotoModes mode, int d, int dt, int b, int bt) {
         super(cardInfo, false);
         currentMode = mode;
@@ -46,7 +48,7 @@ public class Photograph extends abs_aya_card {
                 target = CardTarget.SELF;
                 break;
             case DRAW:
-                setMagic(EMERGENCY_DRAW, EMERGENCY_DRAW);
+                setMagic(EMERGENCY_DRAW, UPG_EMERGENCY_DRAW);
                 target = CardTarget.SELF;
                 break;
         }
