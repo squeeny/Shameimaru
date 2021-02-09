@@ -8,6 +8,7 @@ import Shameimaru.util.CardInfo;
 import basemod.BaseMod;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
@@ -58,6 +59,7 @@ public class InstantShotJournalist extends abs_aya_card {
                         else {
                             p.drawPile.moveToDiscardPile(c);
                             c.triggerOnManualDiscard();
+                            GameActionManager.incrementDiscard(false);
                         }
                     }
                 }
