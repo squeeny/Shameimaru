@@ -2,6 +2,7 @@ package Shameimaru.actions.unique.massDeletion;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
+import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,20 +14,20 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import java.util.ArrayList;
+
 import static Shameimaru.util.actionShortcuts.*;
 
 public class massDeletionAction extends AbstractGameAction {
     private float startingDuration;
-    private int damage;
-    private int block;
     private cardMODE mode;
+    private AbstractCard field;
     public enum cardMODE{
         DAMAGE,
         BLOCK
     }
-    public massDeletionAction(int field, boolean isDamage){
-        this.damage = field;
-        this.block = field;
+    public massDeletionAction(AbstractCard pairedCard, boolean isDamage){
+        field = pairedCard;
         actionType = AbstractGameAction.ActionType.WAIT;
         startingDuration = Settings.ACTION_DUR_FAST;
         mode = isDamage ? cardMODE.DAMAGE : cardMODE.BLOCK;
@@ -41,7 +42,8 @@ public class massDeletionAction extends AbstractGameAction {
                 int i;
                 if(mode == cardMODE.BLOCK){
                     for(i = 0; i < count; i += 1){
-                        doDef(block, true);
+                        field.applyPowers();
+                        doDef(field.block, true);
                         AbstractCard card = tmp.getNCardFromTop(i);
                         p().drawPile.moveToDiscardPile(card);
                         card.triggerOnManualDiscard();
@@ -50,8 +52,7 @@ public class massDeletionAction extends AbstractGameAction {
                 }
                 else {
                     for(i = 0; i < count; i += 1){
-                        target = getRandomAliveMonster(AbstractDungeon.getMonsters(), AbstractDungeon.cardRng);
-                        doDmg(target, damage, DamageInfo.DamageType.NORMAL, AttackEffect.NONE, true);
+                        att(new AttackDamageRandomEnemyAction(field, AttackEffect.NONE));
                         AbstractCard card = tmp.getNCardFromTop(i);
                         p().drawPile.moveToDiscardPile(card);
                         card.triggerOnManualDiscard();

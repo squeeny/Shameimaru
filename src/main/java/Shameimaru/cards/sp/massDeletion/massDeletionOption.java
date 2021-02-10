@@ -28,6 +28,7 @@ public class massDeletionOption extends abs_aya_card {
     public massDeletionOption(AbstractCard parentCard, massDeletionAction.cardMODE option) {
         super(cardInfo, false);
         mode = option;
+        this.parentCard = parentCard;
         setDamage(parentCard.damage);
         setBlock(parentCard.block);
         if(mode == BLOCK){ this.rawDescription = cardStrings.UPGRADE_DESCRIPTION; }
@@ -37,7 +38,7 @@ public class massDeletionOption extends abs_aya_card {
     public void use(AbstractPlayer p, AbstractMonster m) { }
     @Override
     public void onChoseThisOption(){
-        if(mode == BLOCK){ atb(new massDeletionAction(block,false)); }
-        else { atb(new massDeletionAction(damage, true)); }
+        if(mode == BLOCK){ atb(new massDeletionAction(parentCard,false)); }
+        else { atb(new massDeletionAction(parentCard, true)); }
     }
 }
