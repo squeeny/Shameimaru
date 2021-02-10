@@ -7,6 +7,9 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 import static Shameimaru.util.actionShortcuts.att;
 import static Shameimaru.util.actionShortcuts.p;
 
@@ -32,7 +35,9 @@ public class highlightReelAction extends AbstractGameAction {
         }
 
         else if (AbstractDungeon.gridSelectScreen.selectedCards.size() != 0) {
-            for (AbstractCard card : AbstractDungeon.gridSelectScreen.selectedCards) {
+            ArrayList<AbstractCard> cards = AbstractDungeon.gridSelectScreen.selectedCards;
+            Collections.reverse(cards);
+            for (AbstractCard card : cards) {
                 p().drawPile.group.remove(card);
                 (AbstractDungeon.getCurrRoom()).souls.remove(card);
                 att(new NewQueueCardAction(card, true, false, true));
