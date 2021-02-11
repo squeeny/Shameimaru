@@ -26,7 +26,6 @@ public class WhispersOfTheWind extends abs_aya_card {
         super(cardInfo, true);
         setMagic(FETCH);
         setAyaMagic(DISCARD);
-        setRetain(true);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
