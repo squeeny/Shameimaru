@@ -15,14 +15,14 @@ import static Shameimaru.util.actionShortcuts.doDmg;
 public class PhotoAlbum extends abs_aya_card {
     private final static CardInfo cardInfo = new CardInfo(
             PhotoAlbum.class.getSimpleName(),
-            COSTS[2],
+            COSTS[1],
             AbstractCard.CardType.ATTACK,
             CardTarget.ENEMY
     );
     public static final String ID = makeID(cardInfo.cardName);
-    private static final int DMG = 7;
+    private static final int DMG = 4;
     private static final int UPG_DMG = 3;
-    private static final int PHOTO_DMG = 7;
+    private static final int PHOTO_DMG = 4;
     private static final int UPG_PHOTO_DMG = 3;
     private static final int HITS = 2;
 
