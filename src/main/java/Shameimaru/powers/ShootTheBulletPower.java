@@ -38,9 +38,12 @@ public class ShootTheBulletPower extends AbstractPower {
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0) {
-            flash();
-            amount = -1;
+        if(owner.hasPower(EvasivePower.POWER_ID)){ }
+        else {
+            if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0) {
+                flash();
+                amount = -1;
+            }
         }
         return damageAmount;
     }

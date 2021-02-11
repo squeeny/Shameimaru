@@ -90,6 +90,7 @@ public class Photograph extends abs_aya_card {
         baseBlock *= 2;
         baseMagicNumber *= 2;
         ayaBaseSecondMagicNumber *= 2;
+        this.applyPowers();
     }
     public void initDesc(){
         String desc = cardStrings.DESCRIPTION;
