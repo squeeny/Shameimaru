@@ -188,8 +188,8 @@
     "NAME": "Galeforce",
     "DESCRIPTION": "Deal !D! damage. NL If Fatal: NL Gain [E] . NL Draw !M! card."
   },
-  "${ModID}:BreezeOfReminiscience": {
-    "NAME": "Breeze Of Reminiscience",
+  "${ModID}:BreezeOfReminiscence": {
+    "NAME": "Breeze Of Reminiscence",
     "DESCRIPTION": "Deal !D! damage. NL Return a card from your discard pile into your hand."
   },
   "${ModID}:GaleBlade": {
