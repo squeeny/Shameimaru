@@ -2,8 +2,10 @@ package Shameimaru.cards.sp.peerlessWind;
 
 import Shameimaru.actions.unique.foresight.foresightCardAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.cards.rar.OpeningWindAdvent;
 import Shameimaru.cards.unc.PeerlessWind;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -32,6 +34,9 @@ public class peerlessWindOption extends abs_aya_card {
         setMagic(DRAW);
         if(optionChosen){ this.rawDescription = cardStrings.UPGRADE_DESCRIPTION; }
         this.initializeDescription();
+        img = TexLoader.getAndLoadCardTextureString(PeerlessWind.class.getSimpleName());
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

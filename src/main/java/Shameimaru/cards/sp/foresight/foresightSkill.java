@@ -2,7 +2,9 @@ package Shameimaru.cards.sp.foresight;
 
 import Shameimaru.actions.unique.foresight.foresightCardAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.cards.com.Foresight;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.EscapePlanAction;
@@ -27,6 +29,9 @@ public class foresightSkill extends abs_aya_card {
     public foresightSkill(AbstractCard parentCard) {
         super(cardInfo, false);
         foresightMaster = parentCard;
+        img = TexLoader.getAndLoadCardTextureString(Foresight.class.getSimpleName());
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

@@ -2,9 +2,11 @@ package Shameimaru.cards.sp.duality;
 
 import Shameimaru.actions.unique.openingWindAdvent.bandagesAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.cards.unc.MassDeletion;
 import Shameimaru.powers.NegativePower;
 import Shameimaru.powers.PolaroidPower;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -30,6 +32,9 @@ public class theNegative extends abs_aya_card {
         super(cardInfo, false);
         setMagic(DAMAGE, UPG_DAMAGE);
         setAyaMagic(REFUND_ENERGY);
+        img = TexLoader.getAndLoadCardTextureString("DualityB");
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

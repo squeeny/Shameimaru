@@ -2,7 +2,9 @@ package Shameimaru.cards.sp.openingWindAdvent;
 
 import Shameimaru.actions.unique.openingWindAdvent.tingshaAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.cards.rar.OpeningWindAdvent;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -24,6 +26,9 @@ public class tingshaOption extends abs_aya_card {
     public tingshaOption() {
         super(cardInfo, false);
         setMagic(DAMAGE);
+        img = TexLoader.getAndLoadCardTextureString(OpeningWindAdvent.class.getSimpleName());
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

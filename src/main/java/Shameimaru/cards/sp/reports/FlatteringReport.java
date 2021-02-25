@@ -2,6 +2,7 @@ package Shameimaru.cards.sp.reports;
 
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -29,6 +30,9 @@ public class FlatteringReport extends abs_aya_card {
     public FlatteringReport() {
         super(cardInfo, false);
         setMagic(STR_GAIN, UPG_STR_GAIN);
+        img = TexLoader.getAndLoadCardTextureString("CoerciveReport");
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

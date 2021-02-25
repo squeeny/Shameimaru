@@ -132,7 +132,7 @@
     "UPGRADE_DESCRIPTION": "${ModID}:Adaptive: NL *Distraught+ NL *Enrage+."
   },
   "${ModID}:Photocopier": {
-    "NAME": "Photocopier",
+    "NAME": "Retrace",
     "DESCRIPTION": "Select a common card in your deck. Add a copy of it to your deck. NL Fleeting."
   },
   "${ModID}:Imitation": {

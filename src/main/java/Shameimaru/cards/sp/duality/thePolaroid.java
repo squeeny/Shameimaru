@@ -4,6 +4,7 @@ import Shameimaru.actions.unique.openingWindAdvent.bandagesAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.powers.PolaroidPower;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -28,6 +29,9 @@ public class thePolaroid extends abs_aya_card {
         super(cardInfo, true);
         setMagic(EVASION);
         setAyaMagic(REFUND_ENERGY);
+        img = TexLoader.getAndLoadCardTextureString("DualityA");
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

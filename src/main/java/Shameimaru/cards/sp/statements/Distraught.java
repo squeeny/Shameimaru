@@ -3,6 +3,7 @@ package Shameimaru.cards.sp.statements;
 import Shameimaru.actions.unique.foresight.foresightCardAction;
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -35,6 +36,9 @@ public class Distraught extends abs_aya_card {
         super(cardInfo, false);
         setMagic(Distraught, UPG_Distraught);
         storedMonster = m;
+        img = TexLoader.getAndLoadCardTextureString("LoadedStatementP");
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

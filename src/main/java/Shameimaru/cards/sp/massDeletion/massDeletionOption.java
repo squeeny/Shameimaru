@@ -2,7 +2,9 @@ package Shameimaru.cards.sp.massDeletion;
 
 import Shameimaru.actions.unique.massDeletion.massDeletionAction;
 import Shameimaru.cards.abs.abs_aya_card;
+import Shameimaru.cards.unc.MassDeletion;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -33,6 +35,9 @@ public class massDeletionOption extends abs_aya_card {
         setBlock(parentCard.block);
         if(mode == BLOCK){ this.rawDescription = cardStrings.UPGRADE_DESCRIPTION; }
         this.initializeDescription();
+        img = TexLoader.getAndLoadCardTextureString(MassDeletion.class.getSimpleName());
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }

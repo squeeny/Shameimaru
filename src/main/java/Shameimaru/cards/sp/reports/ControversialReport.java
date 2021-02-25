@@ -2,6 +2,7 @@ package Shameimaru.cards.sp.reports;
 
 import Shameimaru.cards.abs.abs_aya_card;
 import Shameimaru.util.CardInfo;
+import Shameimaru.util.TexLoader;
 import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.BetterDiscardPileToHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,6 +29,9 @@ public class ControversialReport extends abs_aya_card {
     public ControversialReport() {
         super(cardInfo, false);
         setMagic(STR_GAIN, UPG_STR_GAIN);
+        img = TexLoader.getAndLoadCardTextureString("CoerciveReport");
+        this.textureImg = img;
+        loadCardImage(textureImg);
     }
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) { }
