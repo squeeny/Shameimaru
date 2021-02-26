@@ -31,6 +31,5 @@ public class WhispersOfTheWind extends abs_aya_card {
     public void use(AbstractPlayer p, AbstractMonster m) {
         atb(new SeekAction(magicNumber));
         atb(new DiscardAction(p, p, ayaSecondMagicNumber, !this.upgraded));
-        setExhaust(true);
     }
 }

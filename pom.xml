@@ -4,9 +4,9 @@
     <groupId>UnimportantInfo</groupId>
 
     <artifactId>Shameimaru</artifactId>
-    <version>0.15</version>
+    <version>0.16</version>
     <name>Aya Shameimaru</name>
-    <description>TODO: Change this description</description>
+    <description>This mod adds Aya from Touhou.</description>
     <!-- Change the above for mod information. -->
 
     <properties>
