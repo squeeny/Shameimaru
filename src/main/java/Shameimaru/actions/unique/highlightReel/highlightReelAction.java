@@ -24,13 +24,13 @@ public class highlightReelAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_FAST) {
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             for(AbstractCard c: p().drawPile.group) { tmp.addToTop(c); }
-            if (tmp.size() < amount) {
+            if (tmp.size() == 0) {
                 this.isDone = true;
                 return;
             }
             tmp.sortAlphabetically(true);
             tmp.sortByRarityPlusStatusCardType(false);
-            AbstractDungeon.gridSelectScreen.open(tmp, amount, "", false);
+            AbstractDungeon.gridSelectScreen.open(tmp, Math.min(tmp.size(), amount), "", false);
             tickDuration();
         }
 
